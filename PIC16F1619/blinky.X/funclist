@@ -1,0 +1,12 @@
+_button_is_pressed: CODE, 1386 0 18
+_turn_led_on: CODE, 1625 0 71
+_turn_led_off: CODE, 1554 0 71
+_main: CODE, 1696 0 348
+_do_run: CODE, 1454 0 47
+__initialization: CODE, 2044 0 0
+_blink_score: CODE, 1501 0 53
+_clear_leds: CODE, 1369 0 17
+_delay_ms: CODE, 1355 0 14
+_show_led_up_to: CODE, 1404 0 21
+___wmul: CODE, 1425 0 29
+Total: 689

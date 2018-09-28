@@ -1,0 +1,369 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F690 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"7 C:\_projects\microchip\PIC16F690\nintendo-test1.X\led_array.c
+[v _ledIncrementRow ledIncrementRow `(v  1 e 0 0 ]
+"18
+[v _ledScroll ledScroll `(v  1 e 0 0 ]
+"33
+[v _ledGetLetter ledGetLetter `(*.24DCCuc  1 e 1 0 ]
+"48
+[v _ledUpdateArr ledUpdateArr `(v  1 e 0 0 ]
+"115
+[v _ledDisplayString ledDisplayString `(v  1 e 0 0 ]
+"128
+[v _ledSwitchArray ledSwitchArray `(v  1 e 0 0 ]
+"140
+[v _ledUpdateDisplay ledUpdateDisplay `(v  1 e 0 0 ]
+"151
+[v _ledSetData ledSetData `(v  1 e 0 0 ]
+"161
+[v _ledSetRow ledSetRow `(v  1 e 0 0 ]
+"32 C:\_projects\microchip\PIC16F690\nintendo-test1.X\nintendo-test1.c
+[v _main main `(i  1 e 2 0 ]
+"62
+[v _setup setup `(v  1 e 0 0 ]
+"78
+[v _isr isr `II(v  1 e 0 0 ]
+"158 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic16f690.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"207
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"245
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S87 . 1 `uc 1 RABIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RABIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"329
+[u S96 . 1 `S87 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES96  1 e 1 @11 ]
+[s S61 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRABPU 1 0 :1:7 
+]
+"1161
+[s S68 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S72 . 1 `S61 1 . 1 0 `S68 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES72  1 e 1 @129 ]
+"1210
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1259
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1297
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S32 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1523
+[s S38 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S43 . 1 `S32 1 . 1 0 `S38 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES43  1 e 1 @143 ]
+"2592
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2598
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"3034
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"3078
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"3320
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"3378
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3560
+[v _RD RD `VEb  1 e 0 @3168 ]
+"3794
+[v _WR WR `VEb  1 e 0 @3169 ]
+"3796
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"25 C:\_projects\microchip\PIC16F690\nintendo-test1.X\led_array.h
+[v _ledArray0 ledArray0 `[7]uc  1 e 7 0 ]
+"26
+[v _ledArray1 ledArray1 `[7]uc  1 e 7 0 ]
+"27
+[v _currentLedArray currentLedArray `*.4uc  1 e 1 0 ]
+"28
+[v _nextLedArray nextLedArray `*.4uc  1 e 1 0 ]
+"29
+[v _ledRow ledRow `uc  1 e 1 0 ]
+"30
+[v _letterArr letterArr `*.24DCCuc  1 e 1 0 ]
+"31
+[v _letterArrLoc letterArrLoc `i  1 e 2 0 ]
+"32
+[v _letterArrCount letterArrCount `ui  1 e 2 0 ]
+"33
+[v _startAgainFlag startAgainFlag `uc  1 e 1 0 ]
+"16 C:\_projects\microchip\PIC16F690\nintendo-test1.X\letters.h
+[v _L_SPACE L_SPACE `DCC[2]uc  1 e 2 0 ]
+"17
+[v _L_PERIOD L_PERIOD `DCC[2]uc  1 e 2 0 ]
+"18
+[v _L_EXCL L_EXCL `DCC[2]uc  1 e 2 0 ]
+"19
+[v _L_A L_A `DCC[4]uc  1 e 4 0 ]
+"20
+[v _L_B L_B `DCC[4]uc  1 e 4 0 ]
+"21
+[v _L_C L_C `DCC[4]uc  1 e 4 0 ]
+"22
+[v _L_D L_D `DCC[4]uc  1 e 4 0 ]
+"23
+[v _L_E L_E `DCC[4]uc  1 e 4 0 ]
+"24
+[v _L_F L_F `DCC[4]uc  1 e 4 0 ]
+"25
+[v _L_G L_G `DCC[5]uc  1 e 5 0 ]
+"26
+[v _L_H L_H `DCC[4]uc  1 e 4 0 ]
+"27
+[v _L_I L_I `DCC[4]uc  1 e 4 0 ]
+"28
+[v _L_J L_J `DCC[5]uc  1 e 5 0 ]
+"29
+[v _L_K L_K `DCC[5]uc  1 e 5 0 ]
+"30
+[v _L_L L_L `DCC[4]uc  1 e 4 0 ]
+"31
+[v _L_M L_M `DCC[6]uc  1 e 6 0 ]
+"32
+[v _L_N L_N `DCC[5]uc  1 e 5 0 ]
+"33
+[v _L_O L_O `DCC[4]uc  1 e 4 0 ]
+"34
+[v _L_P L_P `DCC[4]uc  1 e 4 0 ]
+"35
+[v _L_Q L_Q `DCC[5]uc  1 e 5 0 ]
+"36
+[v _L_R L_R `DCC[4]uc  1 e 4 0 ]
+"37
+[v _L_S L_S `DCC[4]uc  1 e 4 0 ]
+"38
+[v _L_T L_T `DCC[4]uc  1 e 4 0 ]
+"39
+[v _L_U L_U `DCC[4]uc  1 e 4 0 ]
+"40
+[v _L_V L_V `DCC[4]uc  1 e 4 0 ]
+"41
+[v _L_W L_W `DCC[6]uc  1 e 6 0 ]
+"42
+[v _L_X L_X `DCC[4]uc  1 e 4 0 ]
+"43
+[v _L_Y L_Y `DCC[4]uc  1 e 4 0 ]
+"44
+[v _L_Z L_Z `DCC[4]uc  1 e 4 0 ]
+"45
+[v _L_LIST L_LIST `[26]*.24DCCuc  1 e 26 0 ]
+"30 C:\_projects\microchip\PIC16F690\nintendo-test1.X\nintendo-test1.c
+[v _myLedArray myLedArray `[9]uc  1 e 9 0 ]
+"32
+[v _main main `(i  1 e 2 0 ]
+{
+"35
+[v main@i i `ui  1 a 2 13 ]
+"60
+} 0
+"62
+[v _setup setup `(v  1 e 0 0 ]
+{
+"76
+} 0
+"18 C:\_projects\microchip\PIC16F690\nintendo-test1.X\led_array.c
+[v _ledScroll ledScroll `(v  1 e 0 0 ]
+{
+"28
+} 0
+"115
+[v _ledDisplayString ledDisplayString `(v  1 e 0 0 ]
+{
+[v ledDisplayString@str str `*.24DCCuc  1 a 1 wreg ]
+[v ledDisplayString@str str `*.24DCCuc  1 a 1 wreg ]
+"117
+[v ledDisplayString@str str `*.24DCCuc  1 a 1 11 ]
+"123
+} 0
+"48
+[v _ledUpdateArr ledUpdateArr `(v  1 e 0 0 ]
+{
+"52
+[v ledUpdateArr@letterTmpLoc letterTmpLoc `i  1 a 2 7 ]
+"53
+[v ledUpdateArr@i i `uc  1 a 1 9 ]
+"51
+[v ledUpdateArr@letterTmp letterTmp `*.24DCCuc  1 a 1 6 ]
+"50
+[v ledUpdateArr@letterArrTmp letterArrTmp `*.24DCCuc  1 a 1 5 ]
+"54
+[v ledUpdateArr@incrementLetter incrementLetter `uc  1 a 1 4 ]
+"109
+} 0
+"128
+[v _ledSwitchArray ledSwitchArray `(v  1 e 0 0 ]
+{
+"130
+[v ledSwitchArray@temp temp `*.4uc  1 a 1 1 ]
+"133
+} 0
+"33
+[v _ledGetLetter ledGetLetter `(*.24DCCuc  1 e 1 0 ]
+{
+[v ledGetLetter@lett lett `DCCuc  1 a 1 wreg ]
+[v ledGetLetter@lett lett `DCCuc  1 a 1 wreg ]
+"35
+[v ledGetLetter@lett lett `DCCuc  1 a 1 0 ]
+"43
+} 0
+"78 C:\_projects\microchip\PIC16F690\nintendo-test1.X\nintendo-test1.c
+[v _isr isr `II(v  1 e 0 0 ]
+{
+"85
+} 0
+"7 C:\_projects\microchip\PIC16F690\nintendo-test1.X\led_array.c
+[v _ledIncrementRow ledIncrementRow `(v  1 e 0 0 ]
+{
+"13
+} 0
+"140
+[v _ledUpdateDisplay ledUpdateDisplay `(v  1 e 0 0 ]
+{
+"145
+} 0
+"161
+[v _ledSetRow ledSetRow `(v  1 e 0 0 ]
+{
+[v ledSetRow@rowGhost rowGhost `uc  1 a 1 wreg ]
+[v ledSetRow@rowGhost rowGhost `uc  1 a 1 wreg ]
+"163
+[v ledSetRow@rowGhost rowGhost `uc  1 a 1 0 ]
+"164
+} 0
+"151
+[v _ledSetData ledSetData `(v  1 e 0 0 ]
+{
+[v ledSetData@ledDisplayData ledDisplayData `uc  1 a 1 wreg ]
+[v ledSetData@ledDisplayData ledDisplayData `uc  1 a 1 wreg ]
+"153
+[v ledSetData@ledDisplayData ledDisplayData `uc  1 a 1 1 ]
+"155
+} 0

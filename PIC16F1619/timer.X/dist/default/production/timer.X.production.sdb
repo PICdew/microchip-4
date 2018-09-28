@@ -1,0 +1,178 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1619 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"14 C:\_projects\microchip\PIC16F1619\timer.X\timer.c
+[v _main main `(i  1 e 2 0 ]
+"96
+[v _setup setup `(v  1 e 0 0 ]
+[s S23 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1592 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f1619.h
+[u S30 . 1 `S23 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES30  1 e 1 @140 ]
+"1626
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1664
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S43 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"2230
+[s S48 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+]
+[u S56 . 1 `S43 1 . 1 0 `S48 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES56  1 e 1 @153 ]
+"2569
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2584
+[v _LATAbits LATAbits `VES30  1 e 1 @268 ]
+"2618
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2656
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"13 C:\_projects\microchip\PIC16F1619\timer.X\timer.h
+[v _NUMS NUMS `[30]uc  1 e 30 0 ]
+"14 C:\_projects\microchip\PIC16F1619\timer.X\timer.c
+[v _main main `(i  1 e 2 0 ]
+{
+"21
+[v main@count count `i  1 a 2 4 ]
+[v main@count2 count2 `i  1 a 2 2 ]
+"18
+[v main@num2 num2 `*.4uc  1 a 1 9 ]
+[v main@num1 num1 `*.4uc  1 a 1 8 ]
+"20
+[v main@var2 var2 `c  1 a 1 7 ]
+"19
+[v main@var1 var1 `uc  1 a 1 6 ]
+"94
+} 0
+"96
+[v _setup setup `(v  1 e 0 0 ]
+{
+"108
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 11 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 9 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 12 ]
+"51
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0

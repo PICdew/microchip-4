@@ -1,0 +1,2136 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.32 build 58300 
+                                                                                               Tue Dec 02 20:03:47 2014
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 58300
+     1                           	processor	16F690
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	idataBANK0,global,class=CODE,delta=2
+     5                           	psect	strings,global,class=STRING,delta=2
+     6                           	psect	nvBANK0,global,class=BANK0,space=1,delta=1
+     7                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     8                           	psect	bssCOMMON,global,class=COMMON,space=1,delta=1
+     9                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+    10                           	psect	dataBANK0,global,class=BANK0,space=1,delta=1
+    11                           	psect	clrtext,global,class=CODE,delta=2
+    12                           	psect	inittext,global,class=CODE,delta=2
+    13                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+    14                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1
+    15                           	psect	maintext,global,class=CODE,split=1,delta=2
+    16                           	psect	text1,local,class=CODE,merge=1,delta=2
+    17                           	psect	text2,local,class=CODE,merge=1,delta=2
+    18                           	psect	text3,local,class=CODE,merge=1,delta=2
+    19                           	psect	text4,local,class=CODE,merge=1,delta=2
+    20                           	psect	text5,local,class=CODE,merge=1,delta=2
+    21                           	psect	text6,local,class=CODE,merge=1,delta=2
+    22                           	psect	text7,local,class=CODE,merge=1,delta=2
+    23                           	psect	intentry,global,class=CODE,delta=2
+    24                           	psect	text8,local,class=CODE,merge=1,delta=2
+    25                           	psect	text9,local,class=CODE,merge=1,delta=2
+    26                           	psect	text10,local,class=CODE,merge=1,delta=2
+    27                           	psect	text11,local,class=CODE,merge=1,delta=2
+    28                           	dabs	1,0x7E,2
+    29  0000                     	;# 
+    30  0001                     	;# 
+    31  0002                     	;# 
+    32  0003                     	;# 
+    33  0004                     	;# 
+    34  0005                     	;# 
+    35  0006                     	;# 
+    36  0007                     	;# 
+    37  000A                     	;# 
+    38  000B                     	;# 
+    39  000C                     	;# 
+    40  000D                     	;# 
+    41  000E                     	;# 
+    42  000E                     	;# 
+    43  000F                     	;# 
+    44  0010                     	;# 
+    45  0011                     	;# 
+    46  0012                     	;# 
+    47  0013                     	;# 
+    48  0014                     	;# 
+    49  0015                     	;# 
+    50  0015                     	;# 
+    51  0016                     	;# 
+    52  0017                     	;# 
+    53  0018                     	;# 
+    54  0019                     	;# 
+    55  001A                     	;# 
+    56  001C                     	;# 
+    57  001D                     	;# 
+    58  001E                     	;# 
+    59  001F                     	;# 
+    60  0081                     	;# 
+    61  0085                     	;# 
+    62  0086                     	;# 
+    63  0087                     	;# 
+    64  008C                     	;# 
+    65  008D                     	;# 
+    66  008E                     	;# 
+    67  008F                     	;# 
+    68  0090                     	;# 
+    69  0092                     	;# 
+    70  0093                     	;# 
+    71  0093                     	;# 
+    72  0093                     	;# 
+    73  0094                     	;# 
+    74  0095                     	;# 
+    75  0095                     	;# 
+    76  0096                     	;# 
+    77  0096                     	;# 
+    78  0097                     	;# 
+    79  0098                     	;# 
+    80  0099                     	;# 
+    81  009A                     	;# 
+    82  009B                     	;# 
+    83  009E                     	;# 
+    84  009F                     	;# 
+    85  010C                     	;# 
+    86  010C                     	;# 
+    87  010D                     	;# 
+    88  010E                     	;# 
+    89  010F                     	;# 
+    90  0115                     	;# 
+    91  0116                     	;# 
+    92  0118                     	;# 
+    93  0119                     	;# 
+    94  011A                     	;# 
+    95  011B                     	;# 
+    96  011E                     	;# 
+    97  011F                     	;# 
+    98  018C                     	;# 
+    99  018D                     	;# 
+   100  019D                     	;# 
+   101  019E                     	;# 
+   102  0000                     	;# 
+   103  0001                     	;# 
+   104  0002                     	;# 
+   105  0003                     	;# 
+   106  0004                     	;# 
+   107  0005                     	;# 
+   108  0006                     	;# 
+   109  0007                     	;# 
+   110  000A                     	;# 
+   111  000B                     	;# 
+   112  000C                     	;# 
+   113  000D                     	;# 
+   114  000E                     	;# 
+   115  000E                     	;# 
+   116  000F                     	;# 
+   117  0010                     	;# 
+   118  0011                     	;# 
+   119  0012                     	;# 
+   120  0013                     	;# 
+   121  0014                     	;# 
+   122  0015                     	;# 
+   123  0015                     	;# 
+   124  0016                     	;# 
+   125  0017                     	;# 
+   126  0018                     	;# 
+   127  0019                     	;# 
+   128  001A                     	;# 
+   129  001C                     	;# 
+   130  001D                     	;# 
+   131  001E                     	;# 
+   132  001F                     	;# 
+   133  0081                     	;# 
+   134  0085                     	;# 
+   135  0086                     	;# 
+   136  0087                     	;# 
+   137  008C                     	;# 
+   138  008D                     	;# 
+   139  008E                     	;# 
+   140  008F                     	;# 
+   141  0090                     	;# 
+   142  0092                     	;# 
+   143  0093                     	;# 
+   144  0093                     	;# 
+   145  0093                     	;# 
+   146  0094                     	;# 
+   147  0095                     	;# 
+   148  0095                     	;# 
+   149  0096                     	;# 
+   150  0096                     	;# 
+   151  0097                     	;# 
+   152  0098                     	;# 
+   153  0099                     	;# 
+   154  009A                     	;# 
+   155  009B                     	;# 
+   156  009E                     	;# 
+   157  009F                     	;# 
+   158  010C                     	;# 
+   159  010C                     	;# 
+   160  010D                     	;# 
+   161  010E                     	;# 
+   162  010F                     	;# 
+   163  0115                     	;# 
+   164  0116                     	;# 
+   165  0118                     	;# 
+   166  0119                     	;# 
+   167  011A                     	;# 
+   168  011B                     	;# 
+   169  011E                     	;# 
+   170  011F                     	;# 
+   171  018C                     	;# 
+   172  018D                     	;# 
+   173  019D                     	;# 
+   174  019E                     	;# 
+   175                           
+   176                           	psect	idataBANK0
+   177  01F0                     __pidataBANK0:	
+   178                           
+   179                           ;initializer for _L_LIST
+   180  01F0  3426               	retlw	(_L_A-__stringbase)& (0+255)
+   181  01F1  342A               	retlw	(_L_B-__stringbase)& (0+255)
+   182  01F2  342E               	retlw	(_L_C-__stringbase)& (0+255)
+   183  01F3  3432               	retlw	(_L_D-__stringbase)& (0+255)
+   184  01F4  3436               	retlw	(_L_E-__stringbase)& (0+255)
+   185  01F5  343A               	retlw	(_L_F-__stringbase)& (0+255)
+   186  01F6  340D               	retlw	(_L_G-__stringbase)& (0+255)
+   187  01F7  343E               	retlw	(_L_H-__stringbase)& (0+255)
+   188  01F8  3442               	retlw	(_L_I-__stringbase)& (0+255)
+   189  01F9  3412               	retlw	(_L_J-__stringbase)& (0+255)
+   190  01FA  3417               	retlw	(_L_K-__stringbase)& (0+255)
+   191  01FB  3446               	retlw	(_L_L-__stringbase)& (0+255)
+   192  01FC  3401               	retlw	(_L_M-__stringbase)& (0+255)
+   193  01FD  341C               	retlw	(_L_N-__stringbase)& (0+255)
+   194  01FE  344A               	retlw	(_L_O-__stringbase)& (0+255)
+   195  01FF  344E               	retlw	(_L_P-__stringbase)& (0+255)
+   196  0200  3421               	retlw	(_L_Q-__stringbase)& (0+255)
+   197  0201  3452               	retlw	(_L_R-__stringbase)& (0+255)
+   198  0202  3456               	retlw	(_L_S-__stringbase)& (0+255)
+   199  0203  345A               	retlw	(_L_T-__stringbase)& (0+255)
+   200  0204  345E               	retlw	(_L_U-__stringbase)& (0+255)
+   201  0205  3462               	retlw	(_L_V-__stringbase)& (0+255)
+   202  0206  3407               	retlw	(_L_W-__stringbase)& (0+255)
+   203  0207  3466               	retlw	(_L_X-__stringbase)& (0+255)
+   204  0208  346A               	retlw	(_L_Y-__stringbase)& (0+255)
+   205  0209  346E               	retlw	(_L_Z-__stringbase)& (0+255)
+   206                           
+   207                           ;initializer for _currentLedArray
+   208  020A  3448               	retlw	_ledArray0& (0+255)
+   209                           
+   210                           ;initializer for _nextLedArray
+   211  020B  344F               	retlw	_ledArray1& (0+255)
+   212                           
+   213                           	psect	strings
+   214  0100                     __pstrings:	
+   215  0100                     stringtab:	
+   216  0100                     __stringtab:	
+   217  0100                     stringcode:	
+   218                           ;	String table - string pointers are 1 byte each
+   219                           
+   220  0100                     stringdir:	
+   221  0100  3001               	movlw	high stringdir
+   222  0101  008A               	movwf	10
+   223  0102  0804               	movf	4,w
+   224  0103  0A84               	incf	4,f
+   225  0104  0782               	addwf	2,f
+   226  0105                     __stringbase:	
+   227  0105  3400               	retlw	0
+   228  0106                     __end_of__stringtab:	
+   229  0106                     _L_M:	
+   230  0106  3405               	retlw	5
+   231  0107  341F               	retlw	31
+   232  0108  3402               	retlw	2
+   233  0109  3404               	retlw	4
+   234  010A  3402               	retlw	2
+   235  010B  341F               	retlw	31
+   236  010C                     __end_of_L_M:	
+   237  010C                     _L_W:	
+   238  010C  3405               	retlw	5
+   239  010D  341F               	retlw	31
+   240  010E  3408               	retlw	8
+   241  010F  3404               	retlw	4
+   242  0110  3408               	retlw	8
+   243  0111  341F               	retlw	31
+   244  0112                     __end_of_L_W:	
+   245  0112                     _L_G:	
+   246  0112  3404               	retlw	4
+   247  0113  340E               	retlw	14
+   248  0114  3411               	retlw	17
+   249  0115  3415               	retlw	21
+   250  0116  340C               	retlw	12
+   251  0117                     __end_of_L_G:	
+   252  0117                     _L_J:	
+   253  0117  3404               	retlw	4
+   254  0118  340C               	retlw	12
+   255  0119  3411               	retlw	17
+   256  011A  340F               	retlw	15
+   257  011B  3401               	retlw	1
+   258  011C                     __end_of_L_J:	
+   259  011C                     _L_K:	
+   260  011C  3404               	retlw	4
+   261  011D  341F               	retlw	31
+   262  011E  3404               	retlw	4
+   263  011F  340A               	retlw	10
+   264  0120  3411               	retlw	17
+   265  0121                     __end_of_L_K:	
+   266  0121                     _L_N:	
+   267  0121  3404               	retlw	4
+   268  0122  341F               	retlw	31
+   269  0123  3402               	retlw	2
+   270  0124  3404               	retlw	4
+   271  0125  341F               	retlw	31
+   272  0126                     __end_of_L_N:	
+   273  0126                     _L_Q:	
+   274  0126  3404               	retlw	4
+   275  0127  340E               	retlw	14
+   276  0128  3411               	retlw	17
+   277  0129  341E               	retlw	30
+   278  012A  3410               	retlw	16
+   279  012B                     __end_of_L_Q:	
+   280  012B                     _L_A:	
+   281  012B  3403               	retlw	3
+   282  012C  341E               	retlw	30
+   283  012D  3405               	retlw	5
+   284  012E  341E               	retlw	30
+   285  012F                     __end_of_L_A:	
+   286  012F                     _L_B:	
+   287  012F  3403               	retlw	3
+   288  0130  341F               	retlw	31
+   289  0131  3415               	retlw	21
+   290  0132  340A               	retlw	10
+   291  0133                     __end_of_L_B:	
+   292  0133                     _L_C:	
+   293  0133  3403               	retlw	3
+   294  0134  340E               	retlw	14
+   295  0135  3411               	retlw	17
+   296  0136  3411               	retlw	17
+   297  0137                     __end_of_L_C:	
+   298  0137                     _L_D:	
+   299  0137  3403               	retlw	3
+   300  0138  341F               	retlw	31
+   301  0139  3411               	retlw	17
+   302  013A  340E               	retlw	14
+   303  013B                     __end_of_L_D:	
+   304  013B                     _L_E:	
+   305  013B  3403               	retlw	3
+   306  013C  341F               	retlw	31
+   307  013D  3415               	retlw	21
+   308  013E  3411               	retlw	17
+   309  013F                     __end_of_L_E:	
+   310  013F                     _L_F:	
+   311  013F  3403               	retlw	3
+   312  0140  341F               	retlw	31
+   313  0141  3405               	retlw	5
+   314  0142  3401               	retlw	1
+   315  0143                     __end_of_L_F:	
+   316  0143                     _L_H:	
+   317  0143  3403               	retlw	3
+   318  0144  341F               	retlw	31
+   319  0145  3404               	retlw	4
+   320  0146  341F               	retlw	31
+   321  0147                     __end_of_L_H:	
+   322  0147                     _L_I:	
+   323  0147  3403               	retlw	3
+   324  0148  3411               	retlw	17
+   325  0149  341F               	retlw	31
+   326  014A  3411               	retlw	17
+   327  014B                     __end_of_L_I:	
+   328  014B                     _L_L:	
+   329  014B  3403               	retlw	3
+   330  014C  341F               	retlw	31
+   331  014D  3410               	retlw	16
+   332  014E  3410               	retlw	16
+   333  014F                     __end_of_L_L:	
+   334  014F                     _L_O:	
+   335  014F  3403               	retlw	3
+   336  0150  340E               	retlw	14
+   337  0151  3411               	retlw	17
+   338  0152  340E               	retlw	14
+   339  0153                     __end_of_L_O:	
+   340  0153                     _L_P:	
+   341  0153  3403               	retlw	3
+   342  0154  341F               	retlw	31
+   343  0155  3405               	retlw	5
+   344  0156  3402               	retlw	2
+   345  0157                     __end_of_L_P:	
+   346  0157                     _L_R:	
+   347  0157  3403               	retlw	3
+   348  0158  341F               	retlw	31
+   349  0159  3405               	retlw	5
+   350  015A  341A               	retlw	26
+   351  015B                     __end_of_L_R:	
+   352  015B                     _L_S:	
+   353  015B  3403               	retlw	3
+   354  015C  3417               	retlw	23
+   355  015D  3415               	retlw	21
+   356  015E  341D               	retlw	29
+   357  015F                     __end_of_L_S:	
+   358  015F                     _L_T:	
+   359  015F  3403               	retlw	3
+   360  0160  3401               	retlw	1
+   361  0161  341F               	retlw	31
+   362  0162  3401               	retlw	1
+   363  0163                     __end_of_L_T:	
+   364  0163                     _L_U:	
+   365  0163  3403               	retlw	3
+   366  0164  341F               	retlw	31
+   367  0165  3410               	retlw	16
+   368  0166  341F               	retlw	31
+   369  0167                     __end_of_L_U:	
+   370  0167                     _L_V:	
+   371  0167  3403               	retlw	3
+   372  0168  340F               	retlw	15
+   373  0169  3410               	retlw	16
+   374  016A  340F               	retlw	15
+   375  016B                     __end_of_L_V:	
+   376  016B                     _L_X:	
+   377  016B  3403               	retlw	3
+   378  016C  341B               	retlw	27
+   379  016D  3404               	retlw	4
+   380  016E  341B               	retlw	27
+   381  016F                     __end_of_L_X:	
+   382  016F                     _L_Y:	
+   383  016F  3403               	retlw	3
+   384  0170  3403               	retlw	3
+   385  0171  341C               	retlw	28
+   386  0172  3403               	retlw	3
+   387  0173                     __end_of_L_Y:	
+   388  0173                     _L_Z:	
+   389  0173  3403               	retlw	3
+   390  0174  3419               	retlw	25
+   391  0175  3415               	retlw	21
+   392  0176  3413               	retlw	19
+   393  0177                     __end_of_L_Z:	
+   394  0177                     _L_EXCL:	
+   395  0177  3401               	retlw	1
+   396  0178  3417               	retlw	23
+   397  0179                     __end_of_L_EXCL:	
+   398  0179                     _L_PERIOD:	
+   399  0179  3401               	retlw	1
+   400  017A  3410               	retlw	16
+   401  017B                     __end_of_L_PERIOD:	
+   402  017B                     _L_SPACE:	
+   403  017B  3401               	retlw	1
+   404  017C  3400               	retlw	0
+   405  017D                     __end_of_L_SPACE:	
+   406  017D                     __stringdata:	
+   407  017D                     STR_1:	
+   408  017D  344D               	retlw	77	;'M'
+   409  017E  344F               	retlw	79	;'O'
+   410  017F  344D               	retlw	77	;'M'
+   411  0180  3420               	retlw	32	;' '
+   412  0181  3449               	retlw	73	;'I'
+   413  0182  3453               	retlw	83	;'S'
+   414  0183  3420               	retlw	32	;' '
+   415  0184  3454               	retlw	84	;'T'
+   416  0185  3448               	retlw	72	;'H'
+   417  0186  3445               	retlw	69	;'E'
+   418  0187  3420               	retlw	32	;' '
+   419  0188  3442               	retlw	66	;'B'
+   420  0189  3445               	retlw	69	;'E'
+   421  018A  3453               	retlw	83	;'S'
+   422  018B  3454               	retlw	84	;'T'
+   423  018C  3445               	retlw	69	;'E'
+   424  018D  3453               	retlw	83	;'S'
+   425  018E  3454               	retlw	84	;'T'
+   426  018F  3421               	retlw	33	;'!'
+   427  0190  3421               	retlw	33	;'!'
+   428  0191  3421               	retlw	33	;'!'
+   429  0192  3421               	retlw	33	;'!'
+   430  0193  3421               	retlw	33	;'!'
+   431  0194  3421               	retlw	33	;'!'
+   432  0195  3421               	retlw	33	;'!'
+   433  0196  3421               	retlw	33	;'!'
+   434  0197  3421               	retlw	33	;'!'
+   435  0198  3400               	retlw	0
+   436  0199                     __end_of__stringdata:	
+   437                           
+   438                           ; #config settings
+   439  0000                     
+   440                           	psect	nvBANK0
+   441  0065                     __pnvBANK0:	
+   442  0065                     _letterArrLoc:	
+   443  0065                     	ds	2
+   444  0067                     _letterArr:	
+   445  0067                     	ds	1
+   446  000B                     _INTCONbits	set	11
+   447  0005                     _PORTA	set	5
+   448  0006                     _PORTB	set	6
+   449  0007                     _PORTC	set	7
+   450  0081                     _OPTION_REGbits	set	129
+   451  008F                     _OSCCONbits	set	143
+   452  0085                     _TRISA	set	133
+   453  0086                     _TRISB	set	134
+   454  0087                     _TRISC	set	135
+   455                           
+   456                           	psect	cinit
+   457  0013                     start_initialization:	
+   458  0013                     __initialization:	
+   459                           
+   460                           ; Clear objects allocated to COMMON
+   461  0013  01F8               	clrf	__pbssCOMMON& (0+127)
+   462                           
+   463                           ; Clear objects allocated to BANK0
+   464  0014  1383               	bcf	3,7	;select IRP bank0
+   465  0015  303C               	movlw	low __pbssBANK0
+   466  0016  0084               	movwf	4
+   467  0017  3056               	movlw	low (__pbssBANK0+26)
+   468  0018  118A  22AE  118A   	fcall	clear_ram0
+   469                           
+   470                           ; Initialize objects allocated to BANK0
+   471  001B  303C               	movlw	low (__pdataBANK0+28)
+   472  001C  00FD               	movwf	btemp+-1
+   473  001D  3001               	movlw	high __pidataBANK0
+   474  001E  00FE               	movwf	btemp
+   475  001F  30F0               	movlw	low __pidataBANK0
+   476  0020  00FF               	movwf	btemp+1
+   477  0021  3020               	movlw	low __pdataBANK0
+   478  0022  0084               	movwf	4
+   479  0023  118A  2278         	fcall	init_ram0
+   480  0025                     end_of_initialization:	
+   481                           ;End of C runtime variable initialization code
+   482                           
+   483  0025                     __end_of__initialization:	
+   484  0025  0183               	clrf	3
+   485  0026  118A  2999         	ljmp	_main	;jump to C main() function
+   486                           
+   487                           	psect	bssCOMMON
+   488  0078                     __pbssCOMMON:	
+   489  0078                     _ledRow:	
+   490  0078                     	ds	1
+   491                           
+   492                           	psect	bssBANK0
+   493  003C                     __pbssBANK0:	
+   494  003C                     _myLedArray:	
+   495  003C                     	ds	9
+   496  0045                     _letterArrCount:	
+   497  0045                     	ds	2
+   498  0047                     _startAgainFlag:	
+   499  0047                     	ds	1
+   500  0048                     _ledArray0:	
+   501  0048                     	ds	7
+   502  004F                     _ledArray1:	
+   503  004F                     	ds	7
+   504                           
+   505                           	psect	dataBANK0
+   506  0020                     __pdataBANK0:	
+   507  0020                     _L_LIST:	
+   508  0020                     	ds	26
+   509  003A                     _currentLedArray:	
+   510  003A                     	ds	1
+   511  003B                     _nextLedArray:	
+   512  003B                     	ds	1
+   513                           
+   514                           	psect	clrtext
+   515  02AE                     clear_ram0:	
+   516                           ;	Called with FSR containing the base address, and
+   517                           ;	W with the last address+1
+   518                           
+   519  02AE  0064               	clrwdt	;clear the watchdog before getting into this loop
+   520  02AF                     clrloop0:	
+   521  02AF  0180               	clrf	0	;clear RAM location pointed to by FSR
+   522  02B0  0A84               	incf	4,f	;increment pointer
+   523  02B1  0604               	xorwf	4,w	;XOR with final address
+   524  02B2  1903               	btfsc	3,2	;have we reached the end yet?
+   525  02B3  3400               	retlw	0	;all done for this memory range, return
+   526  02B4  0604               	xorwf	4,w	;XOR again to restore value
+   527  02B5  2AAF               	goto	clrloop0	;do the next byte
+   528                           
+   529                           	psect	inittext
+   530  0274                     init_fetch0:	
+   531                           ;	Called with low address in FSR and high address in W
+   532                           
+   533  0274  087E               	movf	126,w
+   534  0275  008A               	movwf	10
+   535  0276  087F               	movf	127,w
+   536  0277  0082               	movwf	2
+   537  0278                     init_ram0:	
+   538                           ;Called with:
+   539                           ;	high address of idata address in btemp 
+   540                           ;	low address of idata address in btemp+1 
+   541                           ;	low address of data in FSR
+   542                           ;	high address + 1 of data in btemp-1
+   543                           
+   544  0278  2274  118A         	fcall	init_fetch0
+   545  027A  0080               	movwf	0
+   546  027B  0A84               	incf	4,f
+   547  027C  0804               	movf	4,w
+   548  027D  067D               	xorwf	125,w
+   549  027E  1903               	btfsc	3,2
+   550  027F  3400               	retlw	0
+   551  0280  0AFF               	incf	127,f
+   552  0281  1903               	btfsc	3,2
+   553  0282  0AFE               	incf	126,f
+   554  0283  2A78               	goto	init_ram0
+   555                           
+   556                           	psect	cstackCOMMON
+   557  0070                     __pcstackCOMMON:	
+   558  0070                     ?_setup:	
+   559  0070                     ?_ledDisplayString:	
+   560                           ; 0 bytes @ 0x0
+   561                           
+   562  0070                     ?_ledScroll:	
+   563                           ; 0 bytes @ 0x0
+   564                           
+   565  0070                     ?_ledIncrementRow:	
+   566                           ; 0 bytes @ 0x0
+   567                           
+   568  0070                     ?_ledUpdateDisplay:	
+   569                           ; 0 bytes @ 0x0
+   570                           
+   571  0070                     ?_ledUpdateArr:	
+   572                           ; 0 bytes @ 0x0
+   573                           
+   574  0070                     ?_ledSwitchArray:	
+   575                           ; 0 bytes @ 0x0
+   576                           
+   577  0070                     ?_ledSetData:	
+   578                           ; 0 bytes @ 0x0
+   579                           
+   580  0070                     ??_ledSetData:	
+   581                           ; 0 bytes @ 0x0
+   582                           
+   583  0070                     ?_ledSetRow:	
+   584                           ; 0 bytes @ 0x0
+   585                           
+   586  0070                     ??_ledSetRow:	
+   587                           ; 0 bytes @ 0x0
+   588                           
+   589  0070                     ?_isr:	
+   590                           ; 0 bytes @ 0x0
+   591                           
+   592  0070                     ?_ledGetLetter:	
+   593                           ; 0 bytes @ 0x0
+   594                           
+   595  0070                     ?_main:	
+   596                           ; 1 bytes @ 0x0
+   597                           
+   598  0070                     ledSetRow@rowGhost:	
+   599                           ; 2 bytes @ 0x0
+   600                           
+   601                           
+   602                           ; 1 bytes @ 0x0
+   603  0070                     	ds	1
+   604  0071                     ledSetData@ledDisplayData:	
+   605                           
+   606                           ; 1 bytes @ 0x1
+   607  0071                     	ds	1
+   608  0072                     ??_ledUpdateDisplay:	
+   609                           
+   610                           ; 0 bytes @ 0x2
+   611  0072                     	ds	1
+   612  0073                     ??_ledIncrementRow:	
+   613                           
+   614                           ; 0 bytes @ 0x3
+   615  0073                     	ds	1
+   616  0074                     ??_isr:	
+   617                           
+   618                           ; 0 bytes @ 0x4
+   619  0074                     	ds	4
+   620                           
+   621                           	psect	cstackBANK0
+   622  0056                     __pcstackBANK0:	
+   623  0056                     ??_setup:	
+   624  0056                     ??_ledSwitchArray:	
+   625                           ; 0 bytes @ 0x0
+   626                           
+   627  0056                     ??_ledGetLetter:	
+   628                           ; 0 bytes @ 0x0
+   629                           
+   630  0056                     ledGetLetter@lett:	
+   631                           ; 0 bytes @ 0x0
+   632                           
+   633                           
+   634                           ; 1 bytes @ 0x0
+   635  0056                     	ds	1
+   636  0057                     ledSwitchArray@temp:	
+   637                           
+   638                           ; 1 bytes @ 0x1
+   639  0057                     	ds	1
+   640  0058                     ??_ledUpdateArr:	
+   641                           
+   642                           ; 0 bytes @ 0x2
+   643  0058                     	ds	2
+   644  005A                     ledUpdateArr@incrementLetter:	
+   645                           
+   646                           ; 1 bytes @ 0x4
+   647  005A                     	ds	1
+   648  005B                     ledUpdateArr@letterArrTmp:	
+   649                           
+   650                           ; 1 bytes @ 0x5
+   651  005B                     	ds	1
+   652  005C                     ledUpdateArr@letterTmp:	
+   653                           
+   654                           ; 1 bytes @ 0x6
+   655  005C                     	ds	1
+   656  005D                     ledUpdateArr@letterTmpLoc:	
+   657                           
+   658                           ; 2 bytes @ 0x7
+   659  005D                     	ds	2
+   660  005F                     ledUpdateArr@i:	
+   661                           
+   662                           ; 1 bytes @ 0x9
+   663  005F                     	ds	1
+   664  0060                     ??_ledDisplayString:	
+   665  0060                     ??_ledScroll:	
+   666                           ; 0 bytes @ 0xA
+   667                           
+   668                           
+   669                           ; 0 bytes @ 0xA
+   670  0060                     	ds	1
+   671  0061                     ledDisplayString@str:	
+   672                           
+   673                           ; 1 bytes @ 0xB
+   674  0061                     	ds	1
+   675  0062                     ??_main:	
+   676                           
+   677                           ; 0 bytes @ 0xC
+   678  0062                     	ds	1
+   679  0063                     main@i:	
+   680                           
+   681                           ; 2 bytes @ 0xD
+   682  0063                     	ds	2
+   683                           
+   684                           	psect	maintext
+   685  0199                     __pmaintext:	
+   686 ;;
+   687 ;;Main: autosize = 0, tempsize = 1, incstack = 0, save=0
+   688 ;;
+   689 ;; *************** function _main *****************
+   690 ;; Defined at:
+   691 ;;		line 32 in file "nintendo-test1.c"
+   692 ;; Parameters:    Size  Location     Type
+   693 ;;		None
+   694 ;; Auto vars:     Size  Location     Type
+   695 ;;  i               2   13[BANK0 ] unsigned int 
+   696 ;; Return value:  Size  Location     Type
+   697 ;;                  2  102[COMMON] int 
+   698 ;; Registers used:
+   699 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   700 ;; Tracked objects:
+   701 ;;		On entry : 17F/0
+   702 ;;		On exit  : 0/0
+   703 ;;		Unchanged: 0/0
+   704 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   705 ;;      Params:         0       0       0       0
+   706 ;;      Locals:         0       2       0       0
+   707 ;;      Temps:          0       1       0       0
+   708 ;;      Totals:         0       3       0       0
+   709 ;;Total ram usage:        3 bytes
+   710 ;; Hardware stack levels required when called:    7
+   711 ;; This function calls:
+   712 ;;		_ledDisplayString
+   713 ;;		_ledScroll
+   714 ;;		_setup
+   715 ;; This function is called by:
+   716 ;;		Startup code after reset
+   717 ;; This function uses a non-reentrant model
+   718 ;;
+   719                           
+   720                           
+   721                           ;psect for function _main
+   722  0199                     _main:	
+   723                           
+   724                           ;nintendo-test1.c: 35: unsigned int i = 0;
+   725                           
+   726                           ;incstack = 0
+   727                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   728  0199  1283               	bcf	3,5	;RP0=0, select bank0
+   729  019A  1303               	bcf	3,6	;RP1=0, select bank0
+   730  019B  01E3               	clrf	main@i
+   731  019C  01E4               	clrf	main@i+1
+   732                           
+   733                           ;nintendo-test1.c: 37: setup();
+   734  019D  118A  2263  118A   	fcall	_setup
+   735                           
+   736                           ;nintendo-test1.c: 39: myLedArray[0] = 0x00;
+   737  01A0  1283               	bcf	3,5	;RP0=0, select bank0
+   738  01A1  1303               	bcf	3,6	;RP1=0, select bank0
+   739  01A2  01BC               	clrf	_myLedArray
+   740                           
+   741                           ;nintendo-test1.c: 40: myLedArray[1] = 0x00;
+   742  01A3  01BD               	clrf	_myLedArray+1
+   743                           
+   744                           ;nintendo-test1.c: 41: myLedArray[2] = 0x08;
+   745  01A4  3008               	movlw	8
+   746  01A5  00E2               	movwf	??_main
+   747  01A6  0862               	movf	??_main,w
+   748  01A7  00BE               	movwf	_myLedArray+2
+   749                           
+   750                           ;nintendo-test1.c: 42: myLedArray[3] = 0x11;
+   751  01A8  3011               	movlw	17
+   752  01A9  00E2               	movwf	??_main
+   753  01AA  0862               	movf	??_main,w
+   754  01AB  00BF               	movwf	_myLedArray+3
+   755                           
+   756                           ;nintendo-test1.c: 43: myLedArray[4] = 0x14;
+   757  01AC  3014               	movlw	20
+   758  01AD  00E2               	movwf	??_main
+   759  01AE  0862               	movf	??_main,w
+   760  01AF  00C0               	movwf	_myLedArray+4
+   761                           
+   762                           ;nintendo-test1.c: 44: myLedArray[5] = 0x11;
+   763  01B0  3011               	movlw	17
+   764  01B1  00E2               	movwf	??_main
+   765  01B2  0862               	movf	??_main,w
+   766  01B3  00C1               	movwf	_myLedArray+5
+   767                           
+   768                           ;nintendo-test1.c: 45: myLedArray[6] = 0x08;
+   769  01B4  3008               	movlw	8
+   770  01B5  00E2               	movwf	??_main
+   771  01B6  0862               	movf	??_main,w
+   772  01B7  00C2               	movwf	_myLedArray+6
+   773                           
+   774                           ;nintendo-test1.c: 46: myLedArray[7] = 0x00;
+   775  01B8  01C3               	clrf	_myLedArray+7
+   776                           
+   777                           ;nintendo-test1.c: 47: myLedArray[8] = 0x00;
+   778  01B9  01C4               	clrf	_myLedArray+8
+   779                           
+   780                           ;nintendo-test1.c: 49: ledDisplayString("MOM IS THE BESTEST!!!!!!!!!");
+   781  01BA  3078               	movlw	(STR_1-__stringbase)& (0+255)
+   782  01BB  118A  2284  118A   	fcall	_ledDisplayString
+   783  01BE                     l1078:	
+   784                           ;nintendo-test1.c: 51: while (1)
+   785                           
+   786                           
+   787                           ;nintendo-test1.c: 52: {
+   788                           ;nintendo-test1.c: 54: ledScroll();
+   789  01BE  118A  2228  118A   	fcall	_ledScroll
+   790                           
+   791                           ;nintendo-test1.c: 55: for (i = 0; i < 15000; i++);
+   792  01C1  1283               	bcf	3,5	;RP0=0, select bank0
+   793  01C2  1303               	bcf	3,6	;RP1=0, select bank0
+   794  01C3  01E3               	clrf	main@i
+   795  01C4  01E4               	clrf	main@i+1
+   796  01C5                     L1:	
+   797  01C5  303A               	movlw	58
+   798  01C6  0264               	subwf	main@i+1,w
+   799  01C7  3098               	movlw	152
+   800  01C8  1903               	skipnz
+   801  01C9  0263               	subwf	main@i,w
+   802  01CA  1803               	btfsc	3,0
+   803  01CB  29BE               	goto	l1078
+   804  01CC  3001               	movlw	1
+   805  01CD  07E3               	addwf	main@i,f
+   806  01CE  1803               	skipnc
+   807  01CF  0AE4               	incf	main@i+1,f
+   808  01D0  3000               	movlw	0
+   809  01D1  07E4               	addwf	main@i+1,f
+   810  01D2  29C5               	goto	L1
+   811  01D3                     __end_of_main:	
+   812                           ;nintendo-test1.c: 58: }
+   813                           ;nintendo-test1.c: 59: return 0;
+   814                           ;	Return value of _main is never used
+   815                           
+   816                           
+   817                           	psect	text1
+   818  0263                     __ptext1:	
+   819 ;; *************** function _setup *****************
+   820 ;; Defined at:
+   821 ;;		line 62 in file "nintendo-test1.c"
+   822 ;; Parameters:    Size  Location     Type
+   823 ;;		None
+   824 ;; Auto vars:     Size  Location     Type
+   825 ;;		None
+   826 ;; Return value:  Size  Location     Type
+   827 ;;		None               void
+   828 ;; Registers used:
+   829 ;;		wreg, status,2, status,0
+   830 ;; Tracked objects:
+   831 ;;		On entry : 0/0
+   832 ;;		On exit  : 0/0
+   833 ;;		Unchanged: 0/0
+   834 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   835 ;;      Params:         0       0       0       0
+   836 ;;      Locals:         0       0       0       0
+   837 ;;      Temps:          0       0       0       0
+   838 ;;      Totals:         0       0       0       0
+   839 ;;Total ram usage:        0 bytes
+   840 ;; Hardware stack levels used:    1
+   841 ;; Hardware stack levels required when called:    4
+   842 ;; This function calls:
+   843 ;;		Nothing
+   844 ;; This function is called by:
+   845 ;;		_main
+   846 ;; This function uses a non-reentrant model
+   847 ;;
+   848                           
+   849                           
+   850                           ;psect for function _setup
+   851  0263                     _setup:	
+   852                           
+   853                           ;nintendo-test1.c: 64: OSCCONbits.IRCF = 0b111;
+   854                           
+   855                           ;incstack = 0
+   856                           ; Regs used in _setup: [wreg+status,2+status,0]
+   857  0263  3070               	movlw	112
+   858  0264  1683               	bsf	3,5	;RP0=1, select bank1
+   859  0265  1303               	bcf	3,6	;RP1=0, select bank1
+   860  0266  048F               	iorwf	15,f	;volatile
+   861                           
+   862                           ;nintendo-test1.c: 66: TRISA = 0x00;
+   863  0267  0185               	clrf	5	;volatile
+   864                           
+   865                           ;nintendo-test1.c: 67: TRISB = 0x00;
+   866  0268  0186               	clrf	6	;volatile
+   867                           
+   868                           ;nintendo-test1.c: 68: TRISC = 0x00;
+   869  0269  0187               	clrf	7	;volatile
+   870                           
+   871                           ;nintendo-test1.c: 70: OPTION_REGbits.T0CS = 0;
+   872  026A  1281               	bcf	1,5	;volatile
+   873                           
+   874                           ;nintendo-test1.c: 71: OPTION_REGbits.PSA = 0;
+   875  026B  1181               	bcf	1,3	;volatile
+   876                           
+   877                           ;nintendo-test1.c: 72: OPTION_REGbits.PS = 0b011;
+   878  026C  0801               	movf	1,w	;volatile
+   879  026D  39F8               	andlw	-8
+   880  026E  3803               	iorlw	3
+   881  026F  0081               	movwf	1	;volatile
+   882                           
+   883                           ;nintendo-test1.c: 73: INTCONbits.T0IF = 0;
+   884  0270  110B               	bcf	11,2	;volatile
+   885                           
+   886                           ;nintendo-test1.c: 74: INTCONbits.T0IE = 1;
+   887  0271  168B               	bsf	11,5	;volatile
+   888                           
+   889                           ;nintendo-test1.c: 75: INTCONbits.GIE = 1;
+   890  0272  178B               	bsf	11,7	;volatile
+   891  0273  0008               	return
+   892  0274                     __end_of_setup:	
+   893                           
+   894                           	psect	text2
+   895  0228                     __ptext2:	
+   896 ;; *************** function _ledScroll *****************
+   897 ;; Defined at:
+   898 ;;		line 18 in file "led_array.c"
+   899 ;; Parameters:    Size  Location     Type
+   900 ;;		None
+   901 ;; Auto vars:     Size  Location     Type
+   902 ;;		None
+   903 ;; Return value:  Size  Location     Type
+   904 ;;		None               void
+   905 ;; Registers used:
+   906 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   907 ;; Tracked objects:
+   908 ;;		On entry : 0/0
+   909 ;;		On exit  : 0/0
+   910 ;;		Unchanged: 0/0
+   911 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   912 ;;      Params:         0       0       0       0
+   913 ;;      Locals:         0       0       0       0
+   914 ;;      Temps:          0       0       0       0
+   915 ;;      Totals:         0       0       0       0
+   916 ;;Total ram usage:        0 bytes
+   917 ;; Hardware stack levels used:    1
+   918 ;; Hardware stack levels required when called:    6
+   919 ;; This function calls:
+   920 ;;		_ledUpdateArr
+   921 ;; This function is called by:
+   922 ;;		_main
+   923 ;; This function uses a non-reentrant model
+   924 ;;
+   925                           
+   926                           
+   927                           ;psect for function _ledScroll
+   928  0228                     _ledScroll:	
+   929                           
+   930                           ;led_array.c: 20: letterArrLoc++;
+   931                           
+   932                           ;incstack = 0
+   933                           ; Regs used in _ledScroll: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   934  0228  3001               	movlw	1
+   935  0229  1283               	bcf	3,5	;RP0=0, select bank0
+   936  022A  1303               	bcf	3,6	;RP1=0, select bank0
+   937  022B  07E5               	addwf	_letterArrLoc,f
+   938  022C  1803               	skipnc
+   939  022D  0AE6               	incf	_letterArrLoc+1,f
+   940  022E  3000               	movlw	0
+   941  022F  07E6               	addwf	_letterArrLoc+1,f
+   942                           
+   943                           ;led_array.c: 21: if (startAgainFlag)
+   944  0230  0847               	movf	_startAgainFlag,w
+   945  0231  1903               	btfsc	3,2
+   946  0232  2A3A               	goto	l1044
+   947                           
+   948                           ;led_array.c: 22: {
+   949                           ;led_array.c: 23: startAgainFlag = 0;
+   950  0233  01C7               	clrf	_startAgainFlag
+   951                           
+   952                           ;led_array.c: 24: letterArrCount = 0;
+   953  0234  01C5               	clrf	_letterArrCount
+   954  0235  01C6               	clrf	_letterArrCount+1
+   955                           
+   956                           ;led_array.c: 25: letterArrLoc = -5;
+   957  0236  30FB               	movlw	251
+   958  0237  00E5               	movwf	_letterArrLoc
+   959  0238  30FF               	movlw	255
+   960  0239  00E6               	movwf	_letterArrLoc+1
+   961  023A                     l1044:	
+   962                           
+   963                           ;led_array.c: 26: }
+   964                           ;led_array.c: 27: ledUpdateArr();
+   965  023A  118A  2028         	fcall	_ledUpdateArr
+   966  023C  0008               	return
+   967  023D                     __end_of_ledScroll:	
+   968                           
+   969                           	psect	text3
+   970  0284                     __ptext3:	
+   971 ;; *************** function _ledDisplayString *****************
+   972 ;; Defined at:
+   973 ;;		line 115 in file "led_array.c"
+   974 ;; Parameters:    Size  Location     Type
+   975 ;;  str             1    wreg     PTR const unsigned char 
+   976 ;;		 -> STR_1(28), 
+   977 ;; Auto vars:     Size  Location     Type
+   978 ;;  str             1   11[BANK0 ] PTR const unsigned char 
+   979 ;;		 -> STR_1(28), 
+   980 ;; Return value:  Size  Location     Type
+   981 ;;		None               void
+   982 ;; Registers used:
+   983 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   984 ;; Tracked objects:
+   985 ;;		On entry : 0/0
+   986 ;;		On exit  : 0/0
+   987 ;;		Unchanged: 0/0
+   988 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   989 ;;      Params:         0       0       0       0
+   990 ;;      Locals:         0       1       0       0
+   991 ;;      Temps:          0       1       0       0
+   992 ;;      Totals:         0       2       0       0
+   993 ;;Total ram usage:        2 bytes
+   994 ;; Hardware stack levels used:    1
+   995 ;; Hardware stack levels required when called:    6
+   996 ;; This function calls:
+   997 ;;		_ledUpdateArr
+   998 ;; This function is called by:
+   999 ;;		_main
+  1000 ;; This function uses a non-reentrant model
+  1001 ;;
+  1002                           
+  1003                           
+  1004                           ;psect for function _ledDisplayString
+  1005  0284                     _ledDisplayString:	
+  1006                           
+  1007                           ;incstack = 0
+  1008                           ; Regs used in _ledDisplayString: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1009                           ;ledDisplayString@str stored from wreg
+  1010  0284  1283               	bcf	3,5	;RP0=0, select bank0
+  1011  0285  1303               	bcf	3,6	;RP1=0, select bank0
+  1012  0286  00E1               	movwf	ledDisplayString@str
+  1013                           
+  1014                           ;led_array.c: 117: letterArr = str;
+  1015  0287  0861               	movf	ledDisplayString@str,w
+  1016  0288  00E0               	movwf	??_ledDisplayString
+  1017  0289  0860               	movf	??_ledDisplayString,w
+  1018  028A  00E7               	movwf	_letterArr
+  1019                           
+  1020                           ;led_array.c: 118: letterArrCount = 0;
+  1021  028B  01C5               	clrf	_letterArrCount
+  1022  028C  01C6               	clrf	_letterArrCount+1
+  1023                           
+  1024                           ;led_array.c: 119: letterArrLoc = -6;
+  1025  028D  30FA               	movlw	250
+  1026  028E  00E5               	movwf	_letterArrLoc
+  1027  028F  30FF               	movlw	255
+  1028  0290  00E6               	movwf	_letterArrLoc+1
+  1029                           
+  1030                           ;led_array.c: 121: ledUpdateArr();
+  1031  0291  118A  2028         	fcall	_ledUpdateArr
+  1032  0293  0008               	return
+  1033  0294                     __end_of_ledDisplayString:	
+  1034                           
+  1035                           	psect	text4
+  1036  0028                     __ptext4:	
+  1037 ;; *************** function _ledUpdateArr *****************
+  1038 ;; Defined at:
+  1039 ;;		line 48 in file "led_array.c"
+  1040 ;; Parameters:    Size  Location     Type
+  1041 ;;		None
+  1042 ;; Auto vars:     Size  Location     Type
+  1043 ;;  letterTmpLoc    2    7[BANK0 ] int 
+  1044 ;;  i               1    9[BANK0 ] unsigned char 
+  1045 ;;  letterTmp       1    6[BANK0 ] PTR const unsigned char 
+  1046 ;;		 -> L_EXCL(2), L_PERIOD(2), L_SPACE(2), L_Z(4), 
+  1047 ;;		 -> L_Y(4), L_X(4), L_W(6), L_V(4), 
+  1048 ;;		 -> L_U(4), L_T(4), L_S(4), L_R(4), 
+  1049 ;;		 -> L_Q(5), L_P(4), L_O(4), L_N(5), 
+  1050 ;;		 -> L_M(6), L_L(4), L_K(5), L_J(5), 
+  1051 ;;		 -> L_I(4), L_H(4), L_G(5), L_F(4), 
+  1052 ;;		 -> L_E(4), L_D(4), L_C(4), L_B(4), 
+  1053 ;;		 -> L_A(4), 
+  1054 ;;  letterArrTmp    1    5[BANK0 ] PTR const unsigned char 
+  1055 ;;		 -> STR_1(28), ROM(4096), 
+  1056 ;;  incrementLet    1    4[BANK0 ] unsigned char 
+  1057 ;; Return value:  Size  Location     Type
+  1058 ;;		None               void
+  1059 ;; Registers used:
+  1060 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+  1061 ;; Tracked objects:
+  1062 ;;		On entry : 0/0
+  1063 ;;		On exit  : 0/0
+  1064 ;;		Unchanged: 0/0
+  1065 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1066 ;;      Params:         0       0       0       0
+  1067 ;;      Locals:         0       6       0       0
+  1068 ;;      Temps:          0       2       0       0
+  1069 ;;      Totals:         0       8       0       0
+  1070 ;;Total ram usage:        8 bytes
+  1071 ;; Hardware stack levels used:    1
+  1072 ;; Hardware stack levels required when called:    5
+  1073 ;; This function calls:
+  1074 ;;		_ledGetLetter
+  1075 ;;		_ledSwitchArray
+  1076 ;; This function is called by:
+  1077 ;;		_ledScroll
+  1078 ;;		_ledDisplayString
+  1079 ;; This function uses a non-reentrant model
+  1080 ;;
+  1081                           
+  1082                           
+  1083                           ;psect for function _ledUpdateArr
+  1084  0028                     _ledUpdateArr:	
+  1085                           
+  1086                           ;led_array.c: 50: string letterArrTmp = letterArr + letterArrCount;
+  1087                           
+  1088                           ;incstack = 0
+  1089                           ; Regs used in _ledUpdateArr: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1090  0028  1283               	bcf	3,5	;RP0=0, select bank0
+  1091  0029  1303               	bcf	3,6	;RP1=0, select bank0
+  1092  002A  0845               	movf	_letterArrCount,w
+  1093  002B  0767               	addwf	_letterArr,w
+  1094  002C  00D8               	movwf	??_ledUpdateArr
+  1095  002D  0858               	movf	??_ledUpdateArr,w
+  1096  002E  00DB               	movwf	ledUpdateArr@letterArrTmp
+  1097                           
+  1098                           ;led_array.c: 51: letter letterTmp = ledGetLetter(*letterArrTmp);
+  1099  002F  085B               	movf	ledUpdateArr@letterArrTmp,w
+  1100  0030  0084               	movwf	4
+  1101  0031  118A  2100  118A   	fcall	stringdir
+  1102  0034  118A  220C  118A   	fcall	_ledGetLetter
+  1103  0037  1283               	bcf	3,5	;RP0=0, select bank0
+  1104  0038  1303               	bcf	3,6	;RP1=0, select bank0
+  1105  0039  00D8               	movwf	??_ledUpdateArr
+  1106  003A  0858               	movf	??_ledUpdateArr,w
+  1107  003B  00DC               	movwf	ledUpdateArr@letterTmp
+  1108                           
+  1109                           ;led_array.c: 52: int letterTmpLoc = 0;
+  1110  003C  01DD               	clrf	ledUpdateArr@letterTmpLoc
+  1111  003D  01DE               	clrf	ledUpdateArr@letterTmpLoc+1
+  1112                           
+  1113                           ;led_array.c: 53: unsigned char i;
+  1114                           ;led_array.c: 54: unsigned char incrementLetter = 0;
+  1115  003E  01DA               	clrf	ledUpdateArr@incrementLetter
+  1116                           
+  1117                           ;led_array.c: 56: letterTmpLoc = letterArrLoc;
+  1118  003F  0866               	movf	_letterArrLoc+1,w
+  1119  0040  01DE               	clrf	ledUpdateArr@letterTmpLoc+1
+  1120  0041  07DE               	addwf	ledUpdateArr@letterTmpLoc+1,f
+  1121  0042  0865               	movf	_letterArrLoc,w
+  1122  0043  01DD               	clrf	ledUpdateArr@letterTmpLoc
+  1123  0044  07DD               	addwf	ledUpdateArr@letterTmpLoc,f
+  1124                           
+  1125                           ;led_array.c: 59: for (i = 0; i < 7; i++)
+  1126  0045  01DF               	clrf	ledUpdateArr@i
+  1127  0046  3007               	movlw	7
+  1128  0047  025F               	subwf	ledUpdateArr@i,w
+  1129  0048  1803               	btfsc	3,0
+  1130  0049  28C9               	goto	l1000
+  1131  004A                     l229:	
+  1132                           
+  1133                           ;led_array.c: 60: {
+  1134                           ;led_array.c: 61: if (letterTmpLoc < 0)
+  1135  004A  1BDE               	btfsc	ledUpdateArr@letterTmpLoc+1,7
+  1136  004B  2867               	goto	L2
+  1137                           
+  1138                           ;led_array.c: 66: else
+  1139                           ;led_array.c: 67: {
+  1140                           ;led_array.c: 68: if (*letterArrTmp == '\0')
+  1141                           
+  1142                           ;led_array.c: 65: }
+  1143                           
+  1144                           ;led_array.c: 64: letterTmpLoc++;
+  1145                           
+  1146                           ;led_array.c: 62: {
+  1147                           ;led_array.c: 63: nextLedArray[6 - i] = (unsigned char) 0;
+  1148  004C  085B               	movf	ledUpdateArr@letterArrTmp,w
+  1149  004D  0084               	movwf	4
+  1150  004E  118A  2100  118A   	fcall	stringdir
+  1151  0051  3800               	iorlw	0
+  1152  0052  1D03               	skipz
+  1153  0053  2863               	goto	l972
+  1154                           
+  1155                           ;led_array.c: 69: {
+  1156                           ;led_array.c: 70: if (i == 0)
+  1157  0054  08DF               	movf	ledUpdateArr@i,f
+  1158  0055  1D03               	skipz
+  1159  0056  2859               	goto	l970
+  1160                           
+  1161                           ;led_array.c: 71: {
+  1162                           ;led_array.c: 72: startAgainFlag = 1;
+  1163  0057  01C7               	clrf	_startAgainFlag
+  1164  0058  0AC7               	incf	_startAgainFlag,f
+  1165  0059                     l970:	
+  1166                           
+  1167                           ;led_array.c: 73: }
+  1168                           ;led_array.c: 74: nextLedArray[6 - i] = '\0';
+  1169  0059  035F               	decf	ledUpdateArr@i,w
+  1170  005A  3AFF               	xorlw	255
+  1171  005B  3E06               	addlw	6
+  1172  005C  073B               	addwf	_nextLedArray,w
+  1173  005D  00D8               	movwf	??_ledUpdateArr
+  1174  005E  0858               	movf	??_ledUpdateArr,w
+  1175  005F  0084               	movwf	4
+  1176  0060  1383               	bcf	3,7	;select IRP bank0
+  1177  0061  0180               	clrf	0
+  1178                           
+  1179                           ;led_array.c: 75: }
+  1180  0062  28C1               	goto	l996
+  1181  0063                     l972:	
+  1182                           
+  1183                           ;led_array.c: 76: else if (letterTmpLoc == 0)
+  1184  0063  085E               	movf	ledUpdateArr@letterTmpLoc+1,w
+  1185  0064  045D               	iorwf	ledUpdateArr@letterTmpLoc,w
+  1186  0065  1D03               	skipz
+  1187  0066  2871               	goto	l978
+  1188  0067                     L2:	
+  1189                           
+  1190                           ;led_array.c: 77: {
+  1191                           ;led_array.c: 78: nextLedArray[6 - i] = '\0';
+  1192  0067  035F               	decf	ledUpdateArr@i,w
+  1193  0068  3AFF               	xorlw	255
+  1194  0069  3E06               	addlw	6
+  1195  006A  073B               	addwf	_nextLedArray,w
+  1196  006B  00D8               	movwf	??_ledUpdateArr
+  1197  006C  0858               	movf	??_ledUpdateArr,w
+  1198  006D  0084               	movwf	4
+  1199  006E  1383               	bcf	3,7	;select IRP bank0
+  1200  006F  0180               	clrf	0
+  1201  0070  28BB               	goto	l994
+  1202  0071                     l978:	
+  1203                           ;led_array.c: 80: }
+  1204                           
+  1205                           ;led_array.c: 79: letterTmpLoc++;
+  1206                           
+  1207                           
+  1208                           ;led_array.c: 81: else if (letterTmpLoc == letterTmp[0])
+  1209  0071  085C               	movf	ledUpdateArr@letterTmp,w
+  1210  0072  0084               	movwf	4
+  1211  0073  118A  2100  118A   	fcall	stringdir
+  1212  0076  00D8               	movwf	??_ledUpdateArr
+  1213  0077  01D9               	clrf	??_ledUpdateArr+1
+  1214  0078  085E               	movf	ledUpdateArr@letterTmpLoc+1,w
+  1215  0079  0659               	xorwf	??_ledUpdateArr+1,w
+  1216  007A  1D03               	skipz
+  1217  007B  287E               	goto	u305
+  1218  007C  085D               	movf	ledUpdateArr@letterTmpLoc,w
+  1219  007D  0658               	xorwf	??_ledUpdateArr,w
+  1220  007E                     u305:	
+  1221  007E  1D03               	skipz
+  1222  007F  28AA               	goto	l992
+  1223                           
+  1224                           ;led_array.c: 82: {
+  1225                           ;led_array.c: 83: nextLedArray[6 - i] = letterTmp[letterTmpLoc];
+  1226  0080  085D               	movf	ledUpdateArr@letterTmpLoc,w
+  1227  0081  075C               	addwf	ledUpdateArr@letterTmp,w
+  1228  0082  0084               	movwf	4
+  1229  0083  118A  2100  118A   	fcall	stringdir
+  1230  0086  00D8               	movwf	??_ledUpdateArr
+  1231  0087  035F               	decf	ledUpdateArr@i,w
+  1232  0088  3AFF               	xorlw	255
+  1233  0089  3E06               	addlw	6
+  1234  008A  073B               	addwf	_nextLedArray,w
+  1235  008B  00D9               	movwf	??_ledUpdateArr+1
+  1236  008C  0859               	movf	??_ledUpdateArr+1,w
+  1237  008D  0084               	movwf	4
+  1238  008E  0858               	movf	??_ledUpdateArr,w
+  1239  008F  1383               	bcf	3,7	;select IRP bank0
+  1240  0090  0080               	movwf	0
+  1241                           
+  1242                           ;led_array.c: 85: letterTmpLoc = 0;
+  1243  0091  01DD               	clrf	ledUpdateArr@letterTmpLoc
+  1244  0092  01DE               	clrf	ledUpdateArr@letterTmpLoc+1
+  1245                           
+  1246                           ;led_array.c: 86: letterArrTmp++;
+  1247  0093  3001               	movlw	1
+  1248  0094  00D8               	movwf	??_ledUpdateArr
+  1249  0095  0858               	movf	??_ledUpdateArr,w
+  1250  0096  07DB               	addwf	ledUpdateArr@letterArrTmp,f
+  1251                           
+  1252                           ;led_array.c: 87: letterTmp = ledGetLetter(*letterArrTmp);
+  1253  0097  085B               	movf	ledUpdateArr@letterArrTmp,w
+  1254  0098  0084               	movwf	4
+  1255  0099  118A  2100  118A   	fcall	stringdir
+  1256  009C  118A  220C  118A   	fcall	_ledGetLetter
+  1257  009F  1283               	bcf	3,5	;RP0=0, select bank0
+  1258  00A0  1303               	bcf	3,6	;RP1=0, select bank0
+  1259  00A1  00D8               	movwf	??_ledUpdateArr
+  1260  00A2  0858               	movf	??_ledUpdateArr,w
+  1261  00A3  00DC               	movwf	ledUpdateArr@letterTmp
+  1262                           
+  1263                           ;led_array.c: 88: if (i == 0)
+  1264  00A4  08DF               	movf	ledUpdateArr@i,f
+  1265  00A5  1D03               	skipz
+  1266  00A6  28C1               	goto	l996
+  1267                           
+  1268                           ;led_array.c: 89: {
+  1269                           ;led_array.c: 90: incrementLetter = 1;
+  1270  00A7  01DA               	clrf	ledUpdateArr@incrementLetter
+  1271  00A8  0ADA               	incf	ledUpdateArr@incrementLetter,f
+  1272                           
+  1273                           ;led_array.c: 91: }
+  1274                           ;led_array.c: 92: }
+  1275  00A9  28C1               	goto	l996
+  1276  00AA                     l992:	
+  1277                           
+  1278                           ;led_array.c: 93: else
+  1279                           ;led_array.c: 94: {
+  1280                           ;led_array.c: 95: nextLedArray[6 - i] = letterTmp[letterTmpLoc++];
+  1281  00AA  085D               	movf	ledUpdateArr@letterTmpLoc,w
+  1282  00AB  075C               	addwf	ledUpdateArr@letterTmp,w
+  1283  00AC  0084               	movwf	4
+  1284  00AD  118A  2100  118A   	fcall	stringdir
+  1285  00B0  00D8               	movwf	??_ledUpdateArr
+  1286  00B1  035F               	decf	ledUpdateArr@i,w
+  1287  00B2  3AFF               	xorlw	255
+  1288  00B3  3E06               	addlw	6
+  1289  00B4  073B               	addwf	_nextLedArray,w
+  1290  00B5  00D9               	movwf	??_ledUpdateArr+1
+  1291  00B6  0859               	movf	??_ledUpdateArr+1,w
+  1292  00B7  0084               	movwf	4
+  1293  00B8  0858               	movf	??_ledUpdateArr,w
+  1294  00B9  1383               	bcf	3,7	;select IRP bank0
+  1295  00BA  0080               	movwf	0
+  1296  00BB                     l994:	
+  1297  00BB  3001               	movlw	1
+  1298  00BC  07DD               	addwf	ledUpdateArr@letterTmpLoc,f
+  1299  00BD  1803               	skipnc
+  1300  00BE  0ADE               	incf	ledUpdateArr@letterTmpLoc+1,f
+  1301  00BF  3000               	movlw	0
+  1302  00C0  07DE               	addwf	ledUpdateArr@letterTmpLoc+1,f
+  1303  00C1                     l996:	
+  1304  00C1  3001               	movlw	1
+  1305  00C2  00D8               	movwf	??_ledUpdateArr
+  1306  00C3  0858               	movf	??_ledUpdateArr,w
+  1307  00C4  07DF               	addwf	ledUpdateArr@i,f
+  1308  00C5  3007               	movlw	7
+  1309  00C6  025F               	subwf	ledUpdateArr@i,w
+  1310  00C7  1C03               	skipc
+  1311  00C8  284A               	goto	l229
+  1312  00C9                     l1000:	
+  1313                           
+  1314                           ;led_array.c: 96: }
+  1315                           ;led_array.c: 99: }
+  1316                           ;led_array.c: 100: }
+  1317                           ;led_array.c: 101: if (incrementLetter)
+  1318  00C9  085A               	movf	ledUpdateArr@incrementLetter,w
+  1319  00CA  1903               	btfsc	3,2
+  1320  00CB  28D7               	goto	l1008
+  1321                           
+  1322                           ;led_array.c: 102: {
+  1323                           ;led_array.c: 103: incrementLetter = 0;
+  1324  00CC  01DA               	clrf	ledUpdateArr@incrementLetter
+  1325                           
+  1326                           ;led_array.c: 104: letterArrCount++;
+  1327  00CD  3001               	movlw	1
+  1328  00CE  07C5               	addwf	_letterArrCount,f
+  1329  00CF  1803               	skipnc
+  1330  00D0  0AC6               	incf	_letterArrCount+1,f
+  1331  00D1  3000               	movlw	0
+  1332  00D2  07C6               	addwf	_letterArrCount+1,f
+  1333                           
+  1334                           ;led_array.c: 105: letterArrLoc = -1;
+  1335  00D3  30FF               	movlw	255
+  1336  00D4  00E5               	movwf	_letterArrLoc
+  1337  00D5  30FF               	movlw	255
+  1338  00D6  00E6               	movwf	_letterArrLoc+1
+  1339  00D7                     l1008:	
+  1340                           
+  1341                           ;led_array.c: 106: }
+  1342                           ;led_array.c: 107: ledSwitchArray();
+  1343  00D7  118A  2294         	fcall	_ledSwitchArray
+  1344  00D9  0008               	return
+  1345  00DA                     __end_of_ledUpdateArr:	
+  1346                           
+  1347                           	psect	text5
+  1348  0294                     __ptext5:	
+  1349 ;; *************** function _ledSwitchArray *****************
+  1350 ;; Defined at:
+  1351 ;;		line 128 in file "led_array.c"
+  1352 ;; Parameters:    Size  Location     Type
+  1353 ;;		None
+  1354 ;; Auto vars:     Size  Location     Type
+  1355 ;;  temp            1    1[BANK0 ] PTR unsigned char 
+  1356 ;;		 -> ledArray1(7), ledArray0(7), 
+  1357 ;; Return value:  Size  Location     Type
+  1358 ;;		None               void
+  1359 ;; Registers used:
+  1360 ;;		wreg
+  1361 ;; Tracked objects:
+  1362 ;;		On entry : 0/0
+  1363 ;;		On exit  : 0/0
+  1364 ;;		Unchanged: 0/0
+  1365 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1366 ;;      Params:         0       0       0       0
+  1367 ;;      Locals:         0       1       0       0
+  1368 ;;      Temps:          0       1       0       0
+  1369 ;;      Totals:         0       2       0       0
+  1370 ;;Total ram usage:        2 bytes
+  1371 ;; Hardware stack levels used:    1
+  1372 ;; Hardware stack levels required when called:    4
+  1373 ;; This function calls:
+  1374 ;;		Nothing
+  1375 ;; This function is called by:
+  1376 ;;		_ledUpdateArr
+  1377 ;; This function uses a non-reentrant model
+  1378 ;;
+  1379                           
+  1380                           
+  1381                           ;psect for function _ledSwitchArray
+  1382  0294                     _ledSwitchArray:	
+  1383                           
+  1384                           ;led_array.c: 130: unsigned char* temp = currentLedArray;
+  1385                           
+  1386                           ;incstack = 0
+  1387                           ; Regs used in _ledSwitchArray: [wreg]
+  1388  0294  1283               	bcf	3,5	;RP0=0, select bank0
+  1389  0295  1303               	bcf	3,6	;RP1=0, select bank0
+  1390  0296  083A               	movf	_currentLedArray,w
+  1391  0297  00D6               	movwf	??_ledSwitchArray
+  1392  0298  0856               	movf	??_ledSwitchArray,w
+  1393  0299  00D7               	movwf	ledSwitchArray@temp
+  1394                           
+  1395                           ;led_array.c: 131: currentLedArray = nextLedArray;
+  1396  029A  083B               	movf	_nextLedArray,w
+  1397  029B  00D6               	movwf	??_ledSwitchArray
+  1398  029C  0856               	movf	??_ledSwitchArray,w
+  1399  029D  00BA               	movwf	_currentLedArray
+  1400                           
+  1401                           ;led_array.c: 132: nextLedArray = temp;
+  1402  029E  0857               	movf	ledSwitchArray@temp,w
+  1403  029F  00D6               	movwf	??_ledSwitchArray
+  1404  02A0  0856               	movf	??_ledSwitchArray,w
+  1405  02A1  00BB               	movwf	_nextLedArray
+  1406  02A2  0008               	return
+  1407  02A3                     __end_of_ledSwitchArray:	
+  1408                           
+  1409                           	psect	text6
+  1410  020C                     __ptext6:	
+  1411 ;; *************** function _ledGetLetter *****************
+  1412 ;; Defined at:
+  1413 ;;		line 33 in file "led_array.c"
+  1414 ;; Parameters:    Size  Location     Type
+  1415 ;;  lett            1    wreg     const unsigned char 
+  1416 ;; Auto vars:     Size  Location     Type
+  1417 ;;  lett            1    0[BANK0 ] const unsigned char 
+  1418 ;; Return value:  Size  Location     Type
+  1419 ;;                  1    wreg      PTR const unsigned char 
+  1420 ;; Registers used:
+  1421 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+  1422 ;; Tracked objects:
+  1423 ;;		On entry : 0/0
+  1424 ;;		On exit  : 0/0
+  1425 ;;		Unchanged: 0/0
+  1426 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1427 ;;      Params:         0       0       0       0
+  1428 ;;      Locals:         0       1       0       0
+  1429 ;;      Temps:          0       0       0       0
+  1430 ;;      Totals:         0       1       0       0
+  1431 ;;Total ram usage:        1 bytes
+  1432 ;; Hardware stack levels used:    1
+  1433 ;; Hardware stack levels required when called:    4
+  1434 ;; This function calls:
+  1435 ;;		Nothing
+  1436 ;; This function is called by:
+  1437 ;;		_ledUpdateArr
+  1438 ;; This function uses a non-reentrant model
+  1439 ;;
+  1440                           
+  1441                           
+  1442                           ;psect for function _ledGetLetter
+  1443  020C                     _ledGetLetter:	
+  1444                           
+  1445                           ;incstack = 0
+  1446                           ; Regs used in _ledGetLetter: [wreg-fsr0h+status,2+status,0]
+  1447                           ;ledGetLetter@lett stored from wreg
+  1448  020C  1283               	bcf	3,5	;RP0=0, select bank0
+  1449  020D  1303               	bcf	3,6	;RP1=0, select bank0
+  1450  020E  00D6               	movwf	ledGetLetter@lett
+  1451                           
+  1452                           ;led_array.c: 35: if (lett == ' ')
+  1453  020F  0856               	movf	ledGetLetter@lett,w
+  1454  0210  3A20               	xorlw	32
+  1455  0211  1D03               	skipz
+  1456  0212  2A15               	goto	l912
+  1457                           
+  1458                           ;led_array.c: 36: return L_SPACE;
+  1459  0213  3076               	movlw	(_L_SPACE-__stringbase)& (0+255)
+  1460  0214  0008               	return
+  1461  0215                     l912:	
+  1462                           
+  1463                           ;led_array.c: 37: else if (lett == '.')
+  1464  0215  0856               	movf	ledGetLetter@lett,w
+  1465  0216  3A2E               	xorlw	46
+  1466  0217  1D03               	skipz
+  1467  0218  2A1B               	goto	l920
+  1468                           
+  1469                           ;led_array.c: 38: return L_PERIOD;
+  1470  0219  3074               	movlw	(_L_PERIOD-__stringbase)& (0+255)
+  1471  021A  0008               	return
+  1472  021B                     l920:	
+  1473                           
+  1474                           ;led_array.c: 39: else if (lett == '!')
+  1475  021B  0856               	movf	ledGetLetter@lett,w
+  1476  021C  3A21               	xorlw	33
+  1477  021D  1D03               	skipz
+  1478  021E  2A21               	goto	l928
+  1479                           
+  1480                           ;led_array.c: 40: return L_EXCL;
+  1481  021F  3072               	movlw	(_L_EXCL-__stringbase)& (0+255)
+  1482  0220  0008               	return
+  1483  0221                     l928:	
+  1484                           
+  1485                           ;led_array.c: 41: else
+  1486                           ;led_array.c: 42: return L_LIST[lett - (unsigned char) 65];
+  1487  0221  0856               	movf	ledGetLetter@lett,w
+  1488  0222  3EBF               	addlw	191
+  1489  0223  3E20               	addlw	_L_LIST& (0+255)
+  1490  0224  0084               	movwf	4
+  1491  0225  1383               	bcf	3,7	;select IRP bank0
+  1492  0226  0800               	movf	0,w
+  1493  0227  0008               	return
+  1494  0228                     __end_of_ledGetLetter:	
+  1495                           
+  1496                           	psect	text7
+  1497  023D                     __ptext7:	
+  1498 ;; *************** function _isr *****************
+  1499 ;; Defined at:
+  1500 ;;		line 78 in file "nintendo-test1.c"
+  1501 ;; Parameters:    Size  Location     Type
+  1502 ;;		None
+  1503 ;; Auto vars:     Size  Location     Type
+  1504 ;;		None
+  1505 ;; Return value:  Size  Location     Type
+  1506 ;;		None               void
+  1507 ;; Registers used:
+  1508 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+  1509 ;; Tracked objects:
+  1510 ;;		On entry : 0/0
+  1511 ;;		On exit  : 0/0
+  1512 ;;		Unchanged: 0/0
+  1513 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1514 ;;      Params:         0       0       0       0
+  1515 ;;      Locals:         0       0       0       0
+  1516 ;;      Temps:          4       0       0       0
+  1517 ;;      Totals:         4       0       0       0
+  1518 ;;Total ram usage:        4 bytes
+  1519 ;; Hardware stack levels used:    1
+  1520 ;; Hardware stack levels required when called:    3
+  1521 ;; This function calls:
+  1522 ;;		_ledIncrementRow
+  1523 ;; This function is called by:
+  1524 ;;		Interrupt level 1
+  1525 ;; This function uses a non-reentrant model
+  1526 ;;
+  1527                           
+  1528                           
+  1529                           ;psect for function _isr
+  1530  023D                     _isr:	
+  1531                           
+  1532                           ;nintendo-test1.c: 80: if (INTCONbits.T0IF)
+  1533  023D  1D0B               	btfss	11,2	;volatile
+  1534  023E  2A43               	goto	i1l115
+  1535                           
+  1536                           ;nintendo-test1.c: 81: {
+  1537                           ;nintendo-test1.c: 82: INTCONbits.T0IF = 0;
+  1538  023F  110B               	bcf	11,2	;volatile
+  1539                           
+  1540                           ;nintendo-test1.c: 83: ledIncrementRow();
+  1541  0240  118A  22A3  118A   	fcall	_ledIncrementRow
+  1542  0243                     i1l115:	
+  1543  0243  0877               	movf	??_isr+3,w
+  1544  0244  1283               	bcf	3,5	;RP0=0, select bank0
+  1545  0245  1303               	bcf	3,6	;RP1=0, select bank0
+  1546  0246  00FF               	movwf	127
+  1547  0247  0876               	movf	??_isr+2,w
+  1548  0248  008A               	movwf	10
+  1549  0249  0875               	movf	??_isr+1,w
+  1550  024A  0084               	movwf	4
+  1551  024B  0E74               	swapf	??_isr^(0+-128),w
+  1552  024C  0083               	movwf	3
+  1553  024D  0EFE               	swapf	126,f
+  1554  024E  0E7E               	swapf	126,w
+  1555  024F  0009               	retfie
+  1556  0250                     __end_of_isr:	
+  1557                           
+  1558                           	psect	intentry
+  1559  0004                     __pintentry:	
+  1560                           ;incstack = 0
+  1561                           ; Regs used in _isr: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1562                           
+  1563  0004                     interrupt_function:	
+  1564  007E                     saved_w	set	btemp
+  1565  0004  00FE               	movwf	btemp
+  1566  0005  0E03               	swapf	3,w
+  1567  0006  00F4               	movwf	??_isr
+  1568  0007  0804               	movf	4,w
+  1569  0008  00F5               	movwf	??_isr+1
+  1570  0009  080A               	movf	10,w
+  1571  000A  00F6               	movwf	??_isr+2
+  1572  000B  1283               	bcf	3,5	;RP0=0, select bank0
+  1573  000C  1303               	bcf	3,6	;RP1=0, select bank0
+  1574  000D  087F               	movf	btemp+1,w
+  1575  000E  00F7               	movwf	??_isr+3
+  1576  000F  118A  2A3D         	ljmp	_isr
+  1577                           
+  1578                           	psect	text8
+  1579  02A3                     __ptext8:	
+  1580 ;; *************** function _ledIncrementRow *****************
+  1581 ;; Defined at:
+  1582 ;;		line 7 in file "led_array.c"
+  1583 ;; Parameters:    Size  Location     Type
+  1584 ;;		None
+  1585 ;; Auto vars:     Size  Location     Type
+  1586 ;;		None
+  1587 ;; Return value:  Size  Location     Type
+  1588 ;;		None               void
+  1589 ;; Registers used:
+  1590 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+  1591 ;; Tracked objects:
+  1592 ;;		On entry : 0/0
+  1593 ;;		On exit  : 0/0
+  1594 ;;		Unchanged: 0/0
+  1595 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1596 ;;      Params:         0       0       0       0
+  1597 ;;      Locals:         0       0       0       0
+  1598 ;;      Temps:          1       0       0       0
+  1599 ;;      Totals:         1       0       0       0
+  1600 ;;Total ram usage:        1 bytes
+  1601 ;; Hardware stack levels used:    1
+  1602 ;; Hardware stack levels required when called:    2
+  1603 ;; This function calls:
+  1604 ;;		_ledUpdateDisplay
+  1605 ;; This function is called by:
+  1606 ;;		_isr
+  1607 ;; This function uses a non-reentrant model
+  1608 ;;
+  1609                           
+  1610                           
+  1611                           ;psect for function _ledIncrementRow
+  1612  02A3                     _ledIncrementRow:	
+  1613                           
+  1614                           ;led_array.c: 9: ledRow++;
+  1615                           
+  1616                           ;incstack = 0
+  1617                           ; Regs used in _ledIncrementRow: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1618  02A3  3001               	movlw	1
+  1619  02A4  00F3               	movwf	??_ledIncrementRow
+  1620  02A5  0873               	movf	??_ledIncrementRow,w
+  1621  02A6  07F8               	addwf	_ledRow,f
+  1622                           
+  1623                           ;led_array.c: 10: if (ledRow >= 7)
+  1624  02A7  3007               	movlw	7
+  1625  02A8  0278               	subwf	_ledRow,w
+  1626  02A9  1803               	btfsc	3,0
+  1627                           
+  1628                           ;led_array.c: 11: ledRow = 0;
+  1629  02AA  01F8               	clrf	_ledRow
+  1630                           
+  1631                           ;led_array.c: 12: ledUpdateDisplay();
+  1632  02AB  118A  21D3         	fcall	_ledUpdateDisplay
+  1633  02AD  0008               	return
+  1634  02AE                     __end_of_ledIncrementRow:	
+  1635                           
+  1636                           	psect	text9
+  1637  01D3                     __ptext9:	
+  1638 ;; *************** function _ledUpdateDisplay *****************
+  1639 ;; Defined at:
+  1640 ;;		line 140 in file "led_array.c"
+  1641 ;; Parameters:    Size  Location     Type
+  1642 ;;		None
+  1643 ;; Auto vars:     Size  Location     Type
+  1644 ;;		None
+  1645 ;; Return value:  Size  Location     Type
+  1646 ;;		None               void
+  1647 ;; Registers used:
+  1648 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+  1649 ;; Tracked objects:
+  1650 ;;		On entry : 0/0
+  1651 ;;		On exit  : 0/0
+  1652 ;;		Unchanged: 0/0
+  1653 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1654 ;;      Params:         0       0       0       0
+  1655 ;;      Locals:         0       0       0       0
+  1656 ;;      Temps:          1       0       0       0
+  1657 ;;      Totals:         1       0       0       0
+  1658 ;;Total ram usage:        1 bytes
+  1659 ;; Hardware stack levels used:    1
+  1660 ;; Hardware stack levels required when called:    1
+  1661 ;; This function calls:
+  1662 ;;		_ledSetData
+  1663 ;;		_ledSetRow
+  1664 ;; This function is called by:
+  1665 ;;		_ledIncrementRow
+  1666 ;; This function uses a non-reentrant model
+  1667 ;;
+  1668                           
+  1669                           
+  1670                           ;psect for function _ledUpdateDisplay
+  1671  01D3                     _ledUpdateDisplay:	
+  1672                           
+  1673                           ;led_array.c: 142: ledSetData(0x00);
+  1674                           
+  1675                           ;incstack = 0
+  1676                           ; Regs used in _ledUpdateDisplay: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1677  01D3  3000               	movlw	0
+  1678  01D4  118A  2250  118A   	fcall	_ledSetData
+  1679                           
+  1680                           ;led_array.c: 143: ledSetRow(1 << ledRow);
+  1681  01D7  3001               	movlw	1
+  1682  01D8  00F2               	movwf	??_ledUpdateDisplay
+  1683  01D9  0A78               	incf	_ledRow,w
+  1684  01DA  29DD               	goto	u24_24
+  1685  01DB                     u24_25:	
+  1686  01DB  1003               	clrc
+  1687  01DC  0DF2               	rlf	??_ledUpdateDisplay,f
+  1688  01DD                     u24_24:	
+  1689  01DD  3EFF               	addlw	-1
+  1690  01DE  1D03               	skipz
+  1691  01DF  29DB               	goto	u24_25
+  1692  01E0  0872               	movf	??_ledUpdateDisplay,w
+  1693  01E1  118A  22B6  118A   	fcall	_ledSetRow
+  1694                           
+  1695                           ;led_array.c: 144: ledSetData(currentLedArray[ledRow]);
+  1696  01E4  0878               	movf	_ledRow,w
+  1697  01E5  1283               	bcf	3,5	;RP0=0, select bank0
+  1698  01E6  1303               	bcf	3,6	;RP1=0, select bank0
+  1699  01E7  073A               	addwf	_currentLedArray,w
+  1700  01E8  00F2               	movwf	??_ledUpdateDisplay
+  1701  01E9  0872               	movf	??_ledUpdateDisplay,w
+  1702  01EA  0084               	movwf	4
+  1703  01EB  1383               	bcf	3,7	;select IRP bank0
+  1704  01EC  0800               	movf	0,w
+  1705  01ED  118A  2250         	fcall	_ledSetData
+  1706  01EF  0008               	return
+  1707  01F0                     __end_of_ledUpdateDisplay:	
+  1708                           
+  1709                           	psect	text10
+  1710  02B6                     __ptext10:	
+  1711 ;; *************** function _ledSetRow *****************
+  1712 ;; Defined at:
+  1713 ;;		line 161 in file "led_array.c"
+  1714 ;; Parameters:    Size  Location     Type
+  1715 ;;  rowGhost        1    wreg     unsigned char 
+  1716 ;; Auto vars:     Size  Location     Type
+  1717 ;;  rowGhost        1    0[COMMON] unsigned char 
+  1718 ;; Return value:  Size  Location     Type
+  1719 ;;		None               void
+  1720 ;; Registers used:
+  1721 ;;		wreg, status,2
+  1722 ;; Tracked objects:
+  1723 ;;		On entry : 0/0
+  1724 ;;		On exit  : 0/0
+  1725 ;;		Unchanged: 0/0
+  1726 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1727 ;;      Params:         0       0       0       0
+  1728 ;;      Locals:         1       0       0       0
+  1729 ;;      Temps:          0       0       0       0
+  1730 ;;      Totals:         1       0       0       0
+  1731 ;;Total ram usage:        1 bytes
+  1732 ;; Hardware stack levels used:    1
+  1733 ;; This function calls:
+  1734 ;;		Nothing
+  1735 ;; This function is called by:
+  1736 ;;		_ledUpdateDisplay
+  1737 ;; This function uses a non-reentrant model
+  1738 ;;
+  1739                           
+  1740                           
+  1741                           ;psect for function _ledSetRow
+  1742  02B6                     _ledSetRow:	
+  1743                           
+  1744                           ;incstack = 0
+  1745                           ; Regs used in _ledSetRow: [wreg+status,2]
+  1746                           ;ledSetRow@rowGhost stored from wreg
+  1747  02B6  00F0               	movwf	ledSetRow@rowGhost
+  1748                           
+  1749                           ;led_array.c: 163: PORTC = ~rowGhost;
+  1750  02B7  0970               	comf	ledSetRow@rowGhost,w
+  1751  02B8  1283               	bcf	3,5	;RP0=0, select bank0
+  1752  02B9  1303               	bcf	3,6	;RP1=0, select bank0
+  1753  02BA  0087               	movwf	7	;volatile
+  1754  02BB  0008               	return
+  1755  02BC                     __end_of_ledSetRow:	
+  1756                           
+  1757                           	psect	text11
+  1758  0250                     __ptext11:	
+  1759 ;; *************** function _ledSetData *****************
+  1760 ;; Defined at:
+  1761 ;;		line 151 in file "led_array.c"
+  1762 ;; Parameters:    Size  Location     Type
+  1763 ;;  ledDisplayDa    1    wreg     unsigned char 
+  1764 ;; Auto vars:     Size  Location     Type
+  1765 ;;  ledDisplayDa    1    1[COMMON] unsigned char 
+  1766 ;; Return value:  Size  Location     Type
+  1767 ;;		None               void
+  1768 ;; Registers used:
+  1769 ;;		wreg, status,2, status,0
+  1770 ;; Tracked objects:
+  1771 ;;		On entry : 0/0
+  1772 ;;		On exit  : 0/0
+  1773 ;;		Unchanged: 0/0
+  1774 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1775 ;;      Params:         0       0       0       0
+  1776 ;;      Locals:         1       0       0       0
+  1777 ;;      Temps:          1       0       0       0
+  1778 ;;      Totals:         2       0       0       0
+  1779 ;;Total ram usage:        2 bytes
+  1780 ;; Hardware stack levels used:    1
+  1781 ;; This function calls:
+  1782 ;;		Nothing
+  1783 ;; This function is called by:
+  1784 ;;		_ledUpdateDisplay
+  1785 ;; This function uses a non-reentrant model
+  1786 ;;
+  1787                           
+  1788                           
+  1789                           ;psect for function _ledSetData
+  1790  0250                     _ledSetData:	
+  1791                           
+  1792                           ;incstack = 0
+  1793                           ; Regs used in _ledSetData: [wreg+status,2+status,0]
+  1794                           ;ledSetData@ledDisplayData stored from wreg
+  1795  0250  00F1               	movwf	ledSetData@ledDisplayData
+  1796                           
+  1797                           ;led_array.c: 153: PORTA = ~ledDisplayData & 0x07;
+  1798  0251  0971               	comf	ledSetData@ledDisplayData,w
+  1799  0252  3907               	andlw	7
+  1800  0253  1283               	bcf	3,5	;RP0=0, select bank0
+  1801  0254  1303               	bcf	3,6	;RP1=0, select bank0
+  1802  0255  0085               	movwf	5	;volatile
+  1803                           
+  1804                           ;led_array.c: 154: PORTB = (~ledDisplayData << 2) & 0x60;
+  1805  0256  0971               	comf	ledSetData@ledDisplayData,w
+  1806  0257  00F0               	movwf	??_ledSetData
+  1807  0258  3001               	movlw	1
+  1808  0259                     u23_25:	
+  1809  0259  1003               	clrc
+  1810  025A  0DF0               	rlf	??_ledSetData,f
+  1811  025B  3EFF               	addlw	-1
+  1812  025C  1D03               	skipz
+  1813  025D  2A59               	goto	u23_25
+  1814  025E  1003               	clrc
+  1815  025F  0D70               	rlf	??_ledSetData,w
+  1816  0260  3960               	andlw	96
+  1817  0261  0086               	movwf	6	;volatile
+  1818  0262  0008               	return
+  1819  0263                     __end_of_ledSetData:	
+  1820  007E                     btemp	set	126	;btemp
+  1821  007E                     wtemp	set	126
+  1822  007E                     wtemp0	set	126
+  1823  0080                     wtemp1	set	128
+  1824  0082                     wtemp2	set	130
+  1825  0084                     wtemp3	set	132
+  1826  0086                     wtemp4	set	134
+  1827  0088                     wtemp5	set	136
+  1828  007F                     wtemp6	set	127
+  1829  007E                     ttemp	set	126
+  1830  007E                     ttemp0	set	126
+  1831  0081                     ttemp1	set	129
+  1832  0084                     ttemp2	set	132
+  1833  0087                     ttemp3	set	135
+  1834  007F                     ttemp4	set	127
+  1835  007E                     ltemp	set	126
+  1836  007E                     ltemp0	set	126
+  1837  0082                     ltemp1	set	130
+  1838  0086                     ltemp2	set	134
+  1839  0080                     ltemp3	set	128
+
+
+Data Sizes:
+    Strings     28
+    Constant    119
+    Data        28
+    BSS         27
+    Persistent  3
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      8       9
+    BANK0            80     15      72
+    BANK1            80      0       0
+    BANK2            80      0       0
+
+Pointer List with Targets:
+
+    ledSwitchArray@temp	PTR unsigned char  size(1) Largest target is 7
+		 -> ledArray1(BANK0[7]), ledArray0(BANK0[7]), 
+
+    ledDisplayString@str	PTR const unsigned char  size(1) Largest target is 28
+		 -> STR_1(CODE[28]), 
+
+    ledUpdateArr@letterTmp	PTR const unsigned char  size(1) Largest target is 6
+		 -> L_EXCL(CODE[2]), L_PERIOD(CODE[2]), L_SPACE(CODE[2]), L_Z(CODE[4]), 
+		 -> L_Y(CODE[4]), L_X(CODE[4]), L_W(CODE[6]), L_V(CODE[4]), 
+		 -> L_U(CODE[4]), L_T(CODE[4]), L_S(CODE[4]), L_R(CODE[4]), 
+		 -> L_Q(CODE[5]), L_P(CODE[4]), L_O(CODE[4]), L_N(CODE[5]), 
+		 -> L_M(CODE[6]), L_L(CODE[4]), L_K(CODE[5]), L_J(CODE[5]), 
+		 -> L_I(CODE[4]), L_H(CODE[4]), L_G(CODE[5]), L_F(CODE[4]), 
+		 -> L_E(CODE[4]), L_D(CODE[4]), L_C(CODE[4]), L_B(CODE[4]), 
+		 -> L_A(CODE[4]), 
+
+    letterArr	PTR const unsigned char  size(1) Largest target is 4096
+		 -> STR_1(CODE[28]), ROM(CODE[4096]), 
+
+    ledUpdateArr@letterArrTmp	PTR const unsigned char  size(1) Largest target is 4096
+		 -> STR_1(CODE[28]), ROM(CODE[4096]), 
+
+    sp__ledGetLetter	PTR const unsigned char  size(1) Largest target is 6
+		 -> L_EXCL(CODE[2]), L_PERIOD(CODE[2]), L_SPACE(CODE[2]), L_Z(CODE[4]), 
+		 -> L_Y(CODE[4]), L_X(CODE[4]), L_W(CODE[6]), L_V(CODE[4]), 
+		 -> L_U(CODE[4]), L_T(CODE[4]), L_S(CODE[4]), L_R(CODE[4]), 
+		 -> L_Q(CODE[5]), L_P(CODE[4]), L_O(CODE[4]), L_N(CODE[5]), 
+		 -> L_M(CODE[6]), L_L(CODE[4]), L_K(CODE[5]), L_J(CODE[5]), 
+		 -> L_I(CODE[4]), L_H(CODE[4]), L_G(CODE[5]), L_F(CODE[4]), 
+		 -> L_E(CODE[4]), L_D(CODE[4]), L_C(CODE[4]), L_B(CODE[4]), 
+		 -> L_A(CODE[4]), 
+
+    nextLedArray	PTR unsigned char  size(1) Largest target is 7
+		 -> ledArray1(BANK0[7]), ledArray0(BANK0[7]), 
+
+    currentLedArray	PTR unsigned char  size(1) Largest target is 7
+		 -> ledArray1(BANK0[7]), ledArray0(BANK0[7]), 
+
+    L_LIST	PTR const unsigned char [26] size(1) Largest target is 6
+		 -> L_Z(CODE[4]), L_Y(CODE[4]), L_X(CODE[4]), L_W(CODE[6]), 
+		 -> L_V(CODE[4]), L_U(CODE[4]), L_T(CODE[4]), L_S(CODE[4]), 
+		 -> L_R(CODE[4]), L_Q(CODE[5]), L_P(CODE[4]), L_O(CODE[4]), 
+		 -> L_N(CODE[5]), L_M(CODE[6]), L_L(CODE[4]), L_K(CODE[5]), 
+		 -> L_J(CODE[5]), L_I(CODE[4]), L_H(CODE[4]), L_G(CODE[5]), 
+		 -> L_F(CODE[4]), L_E(CODE[4]), L_D(CODE[4]), L_C(CODE[4]), 
+		 -> L_B(CODE[4]), L_A(CODE[4]), 
+
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Critical Paths under _isr in COMMON
+
+    _isr->_ledIncrementRow
+    _ledIncrementRow->_ledUpdateDisplay
+    _ledUpdateDisplay->_ledSetData
+
+Critical Paths under _main in BANK0
+
+    _main->_ledDisplayString
+    _ledScroll->_ledUpdateArr
+    _ledDisplayString->_ledUpdateArr
+    _ledUpdateArr->_ledSwitchArray
+
+Critical Paths under _isr in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _isr in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _isr in BANK2
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 3     3      0    1272
+                                             12 BANK0      3     3      0
+                   _ledDisplayString
+                          _ledScroll
+                              _setup
+ ---------------------------------------------------------------------------------
+ (1) _setup                                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _ledScroll                                            0     0      0     588
+                       _ledUpdateArr
+ ---------------------------------------------------------------------------------
+ (1) _ledDisplayString                                     2     2      0     637
+                                             10 BANK0      2     2      0
+                       _ledUpdateArr
+ ---------------------------------------------------------------------------------
+ (2) _ledUpdateArr                                         8     8      0     588
+                                              2 BANK0      8     8      0
+                       _ledGetLetter
+                     _ledSwitchArray
+ ---------------------------------------------------------------------------------
+ (3) _ledSwitchArray                                       2     2      0      23
+                                              0 BANK0      2     2      0
+ ---------------------------------------------------------------------------------
+ (3) _ledGetLetter                                         1     1      0      88
+                                              0 BANK0      1     1      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 3
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (4) _isr                                                  4     4      0      66
+                                              4 COMMON     4     4      0
+                    _ledIncrementRow
+ ---------------------------------------------------------------------------------
+ (5) _ledIncrementRow                                      1     1      0      66
+                                              3 COMMON     1     1      0
+                   _ledUpdateDisplay
+ ---------------------------------------------------------------------------------
+ (6) _ledUpdateDisplay                                     1     1      0      66
+                                              2 COMMON     1     1      0
+                         _ledSetData
+                          _ledSetRow
+ ---------------------------------------------------------------------------------
+ (7) _ledSetRow                                            1     1      0      22
+                                              0 COMMON     1     1      0
+ ---------------------------------------------------------------------------------
+ (7) _ledSetData                                           2     2      0      44
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 7
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _ledDisplayString
+     _ledUpdateArr
+       _ledGetLetter
+       _ledSwitchArray
+   _ledScroll
+     _ledUpdateArr
+       _ledGetLetter
+       _ledSwitchArray
+   _setup
+
+ _isr (ROOT)
+   _ledIncrementRow
+     _ledUpdateDisplay
+       _ledSetData
+       _ledSetRow
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+SFR3                 0      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+BANK2               50      0       0       7        0.0%
+BITBANK2            50      0       0       6        0.0%
+SFR2                 0      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+BANK1               50      0       0       5        0.0%
+BITBANK1            50      0       0       4        0.0%
+SFR1                 0      0       0       2        0.0%
+BITSFR1              0      0       0       2        0.0%
+BANK0               50      F      48       3       90.0%
+BITBANK0            50      0       0       9        0.0%
+SFR0                 0      0       0       1        0.0%
+BITSFR0              0      0       0       1        0.0%
+COMMON               E      8       9       1       64.3%
+BITCOMMON            E      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+DATA                 0      0      51      10        0.0%
+ABS                  0      0      51       8        0.0%
+NULL                 0      0       0       0        0.0%
+STACK                0      0       0       2        0.0%
+EEDATA             100      0       0       0        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.32 build 58300 
+Symbol Table                                                                                   Tue Dec 02 20:03:47 2014
+
+                          pc 0002            ??_ledIncrementRow 0073            ledSetRow@rowGhost 0070  
+                __CFG_CP$OFF 0000              ?_ledSwitchArray 0070                           fsr 0004  
+                        l229 004A                          l920 021B                          l912 0215  
+                        l928 0221                          l970 0059                          l972 0063  
+                        l992 00AA                          l994 00BB                          l978 0071  
+                        l996 00C1                          u305 007E                 __CFG_CPD$OFF 0000  
+                        _L_A 012B                          _L_B 012F                          _L_C 0133  
+                        _L_D 0137                          _L_E 013B                          _L_F 013F  
+                        _L_G 0112                          _L_H 0143                          _L_I 0147  
+                        _L_J 0117                          _L_K 011C                          _L_L 014B  
+                        _L_M 0106                          _L_N 0121                          _L_O 014F  
+                        _L_P 0153                          _L_Q 0126                          _L_R 0157  
+                        _L_S 015B                          _L_T 015F                          _L_U 0163  
+                        _L_V 0167                          _L_W 010C                          _L_X 016B  
+                        _L_Y 016F                          _L_Z 0173                          _isr 023D  
+                        fsr0 0004                          indf 0000                         l1000 00C9  
+                       l1008 00D7                         l1044 023A                         l1078 01BE  
+                       ?_isr 0070                         STR_1 017D               ??_ledUpdateArr 0058  
+         ledSwitchArray@temp 0057                         _main 0199              __end_of_L_SPACE 017D  
+                       btemp 007E               _startAgainFlag 0047                __CFG_BOREN$ON 0000  
+                       ltemp 007E                         start 0011                         ttemp 007E  
+                       wtemp 007E                __CFG_IESO$OFF 0000                __CFG_MCLRE$ON 0000  
+  __size_of_ledDisplayString 0010    __size_of_ledUpdateDisplay 001D                        ??_isr 0074  
+                      ?_main 0070                ledUpdateArr@i 005F                __CFG_WDTE$OFF 0000  
+                      i1l115 0243                        u23_25 0259                        u24_24 01DD  
+                      u24_25 01DB                        _PORTA 0005                        _PORTB 0006  
+                      _PORTC 0007                        _TRISA 0085                        _TRISB 0086  
+                      _TRISC 0087               __CFG_FCMEN$OFF 0000             __end_of_L_PERIOD 017B  
+                      _setup 0263                        main@i 0063                        pclath 000A  
+                      ltemp0 007E                        ltemp1 0082                        ltemp2 0086  
+                      ltemp3 0080                        ttemp0 007E                        ttemp1 0081  
+                      ttemp2 0084                        ttemp3 0087                        ttemp4 007F  
+                      status 0003                        wtemp0 007E                        wtemp1 0080  
+                      wtemp2 0082                        wtemp3 0084                        wtemp4 0086  
+                      wtemp5 0088                        wtemp6 007F              __initialization 0013  
+               __end_of_main 01D3         __end_of_ledGetLetter 0228                       ??_main 0062  
+      ledUpdateArr@letterTmp 005C                       ?_setup 0070                       _L_EXCL 0177  
+                     _L_LIST 0020               __CFG_PWRTE$OFF 0000              _currentLedArray 003A  
+                     _ledRow 0078     ledUpdateArr@letterArrTmp 005B         __end_of_ledUpdateArr 00DA  
+   ledUpdateArr@letterTmpLoc 005D                       saved_w 007E      __end_of__initialization 0025  
+            _ledIncrementRow 02A3             ??_ledSwitchArray 0056             _ledDisplayString 0284  
+           ledGetLetter@lett 0056               __pcstackCOMMON 0070             _ledUpdateDisplay 01D3  
+               __pidataBANK0 01F0                __end_of_setup 0274               _OPTION_REGbits 0081  
+         __size_of_ledSetRow 0006           __size_of_ledScroll 0015                      ??_setup 0056  
+                 __pbssBANK0 003C        __size_of_ledGetLetter 001C                   __pmaintext 0199  
+                 __pintentry 0004                   _ledSetData 0250      __end_of_ledIncrementRow 02AE  
+                    _L_SPACE 017B                   __stringtab 0100                 _ledGetLetter 020C  
+          __end_of_ledSetRow 02BC            __end_of_ledScroll 023D        __size_of_ledUpdateArr 00B2  
+                 _myLedArray 003C                      __ptext1 0263                      __ptext2 0228  
+                    __ptext3 0284                      __ptext4 0028                      __ptext5 0294  
+                    __ptext6 020C                      __ptext7 023D                      __ptext8 02A3  
+                    __ptext9 01D3                 __size_of_isr 0013                      clrloop0 02AF  
+       end_of_initialization 0025                 _ledUpdateArr 0028                  ?_ledSetData 0070  
+   __end_of_ledDisplayString 0294             ?_ledIncrementRow 0070     __end_of_ledUpdateDisplay 01F0  
+             __end_of_L_EXCL 0179          ledDisplayString@str 0061          start_initialization 0013  
+                __end_of_L_A 012F                  __end_of_L_B 0133                  __end_of_L_C 0137  
+                __end_of_L_D 013B                  __end_of_L_E 013F                  __end_of_L_F 0143  
+                __end_of_L_G 0117                  __end_of_L_H 0147                  __end_of_L_I 014B  
+                __end_of_L_J 011C                  __end_of_L_K 0121                  __end_of_L_L 014F  
+                __end_of_L_M 010C                  __end_of_L_N 0126                  __end_of_L_O 0153  
+                __end_of_L_P 0157                  __end_of_L_Q 012B                  __end_of_L_R 015B  
+                __end_of_L_S 015F                  __end_of_L_T 0163                  __end_of_L_U 0167  
+                __end_of_L_V 016B                  __end_of_L_W 0112                  __end_of_L_X 016F  
+                __end_of_L_Y 0173                  __end_of_L_Z 0177                  __end_of_isr 0250  
+ledUpdateArr@incrementLetter 005A          __size_of_ledSetData 0013                   init_fetch0 0274  
+                __pdataBANK0 0020                  __pbssCOMMON 0078                    ___latbits 0001  
+              __pcstackBANK0 0056          __end_of__stringdata 0199                    __pnvBANK0 0065  
+                  _ledArray0 0048                    _ledArray1 004F                    _ledSetRow 02B6  
+                  _ledScroll 0228                    __pstrings 0100      __size_of_ledSwitchArray 000F  
+               _letterArrLoc 0065               __size_of_setup 0011                    _letterArr 0067  
+          interrupt_function 0004                    clear_ram0 02AE                 _nextLedArray 003B  
+                   _L_PERIOD 0179                   ?_ledSetRow 0070                   ?_ledScroll 0070  
+                __stringbase 0105                  __stringdata 017D                 ??_ledSetData 0070  
+          ?_ledDisplayString 0070            ?_ledUpdateDisplay 0070           ??_ledDisplayString 0060  
+         ??_ledUpdateDisplay 0072               _letterArrCount 0045           __end_of_ledSetData 0263  
+         __end_of__stringtab 0106                     __ptext10 02B6                     __ptext11 0250  
+              __size_of_main 003A     __size_of_ledIncrementRow 000B                  ??_ledSetRow 0070  
+                ??_ledScroll 0060     ledSetData@ledDisplayData 0071               _ledSwitchArray 0294  
+                 _INTCONbits 000B                     init_ram0 0278                ?_ledGetLetter 0070  
+                   intlevel1 0000                    stringcode 0100                   _OSCCONbits 008F  
+     __end_of_ledSwitchArray 02A3                     stringdir 0100                     stringtab 0100  
+             ??_ledGetLetter 0056           __CFG_FOSC$INTRCCLK 0000                ?_ledUpdateArr 0070  

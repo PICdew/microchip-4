@@ -1,0 +1,556 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\erik\AppData\Local\Temp\s1ko.obj
+end_init CODE 0 11 11 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\toothbrush_counter.X.production.obj
+cinit CODE 0 13 13 1B 2
+intentry CODE 0 4 4 D 2
+text12 CODE 0 166 166 4E 2
+text11 CODE 0 21A 21A 20 2
+text10 CODE 0 10D 10D 59 2
+text9 CODE 0 257 257 18 2
+text8 CODE 0 1B4 1B4 41 2
+text7 CODE 0 286 286 16 2
+text6 CODE 0 2AF 2AF 11 2
+text5 CODE 0 26F 26F 17 2
+text4 CODE 0 23A 23A 1D 2
+text3 CODE 0 29C 29C 13 2
+text2 CODE 0 1F5 1F5 25 2
+text1 CODE 0 B1 B1 5C 2
+maintext CODE 0 2E 2E 83 2
+cstackBANK0 BANK0 1 52 52 F 1
+cstackCOMMON COMMON 1 70 70 5 1
+clrtext CODE 0 2C0 2C0 8 2
+dataBANK0 BANK0 1 61 61 1 1
+bssBANK0 BANK0 1 20 20 32 1
+dataCOMMON COMMON 1 75 75 3 1
+bssCOMMON COMMON 1 78 78 2 1
+idataBANK0 CODE 0 2CB 2CB 1 2
+idataCOMMON CODE 0 2C8 2C8 3 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0062-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-016F 1
+CODE 0002-0003 2
+CODE 02CC-0FFF 2
+COMMON 007A-007D 1
+CONST 0002-0003 2
+CONST 02CC-0FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0002-0003 2
+ENTRY 02CC-0FFF 2
+IDLOC 2000-2003 2
+RAM 0062-006F 1
+RAM 00A0-00EF 1
+RAM 0120-016F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STACK 00A0-00EF 1
+STRCODE 0002-0003 2
+STRCODE 02CC-0FFF 2
+STRING 0002-0003 2
+STRING 02CC-0FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\toothbrush_counter.X.production.obj
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":142 4 intentry CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":455 13 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":458 13 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":569 13 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":570 14 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":573 15 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":574 16 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":575 17 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":576 18 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":577 19 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":582 1C cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":583 1F cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":587 20 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":588 23 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":589 24 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":590 27 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":591 28 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":592 2A cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":598 2B cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":599 2B cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":600 2C cinit CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":34 2E maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":37 2E maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":38 32 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":39 35 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":40 38 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":41 3B maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":42 43 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":47 47 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":49 4C maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":50 4D maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":51 56 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":52 5F maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":53 68 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":54 71 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":55 7A maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":61 7B maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":62 80 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":64 84 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":65 8B maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":67 8F maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":68 96 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":70 9A maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":71 A1 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":73 A5 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":74 AC maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":45 B0 maintext CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":41 B1 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":43 B4 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":45 B5 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":49 BD text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":51 D2 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":53 D6 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":55 E8 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":57 F1 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":58 F5 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":61 F6 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":65 103 text1 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":201 10D text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":203 110 text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":204 120 text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":205 132 text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":206 144 text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":207 156 text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":209 165 text10 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":142 166 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":144 166 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":148 167 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":152 168 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":154 16A text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":156 16B text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":158 16E text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":159 172 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":160 175 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":161 176 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":164 177 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":165 17B text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":166 180 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":168 184 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":170 187 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":171 18B text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":172 18D text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":173 191 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":174 192 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":177 193 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":178 195 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":179 199 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":181 19D text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":182 1A1 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":183 1A5 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":189 1A9 text12 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":191 1B4 text8 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":193 1B4 text8 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":194 1C6 text8 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":195 1D8 text8 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":196 1EA text8 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":198 1F3 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":4 1F5 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":9 1F8 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":10 1FC text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":12 1FD text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":13 20C text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":14 20E text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":15 212 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":16 214 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c":17 218 text2 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":10 21A text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":15 21D text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":16 224 text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":17 227 text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":18 22E text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":19 232 text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":21 239 text11 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":34 23A text4 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":36 23D text4 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":37 247 text4 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":38 24C text4 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":39 256 text4 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":23 257 text9 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":28 25A text9 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":29 261 text9 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":30 267 text9 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\led.c":32 26E text9 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":128 26F text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":130 26F text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":131 273 text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":132 275 text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":133 276 text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":135 27A text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":136 27D text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":137 27E text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":138 27F text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":139 282 text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":140 285 text5 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":97 286 text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":99 286 text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":100 28A text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":101 28D text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":102 28E text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":103 292 text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":104 294 text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":105 296 text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":106 297 text7 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":110 29B text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":4 29C text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":6 29F text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":43 2A0 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":44 2A2 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":45 2A6 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":46 2A8 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":47 2AA text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c":50 2AD text3 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":112 2AF text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":114 2AF text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":115 2B3 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":116 2B4 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":117 2B5 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":119 2B6 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":120 2B7 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":121 2B8 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":122 2B9 text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":123 2BC text6 CODE
+"C:\_projects\microchip\PIC16F690\toothbrush_counter.X\toothbrush_counter.c":125 2BF text6 CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":556 2C0 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":557 2C0 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":558 2C1 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":559 2C1 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":560 2C2 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":561 2C3 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":562 2C4 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":563 2C5 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":564 2C6 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s1ko.":565 2C7 clrtext CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_phaseSetup 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_PR2 92 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_ISR 2CC 0 CODE 0 text12 dist/default/production\toothbrush_counter.X.production.obj
+__Hintentry 22 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\toothbrush_counter.X.production.obj
+_TMR2 11 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_led0 28 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_led1 2E 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_WPUA 95 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_led2 34 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_led3 3A 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_led4 40 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_updateLEDs 27 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_doof 25 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_main 5C 0 CODE 0 maintext dist/default/production\toothbrush_counter.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\erik\AppData\Local\Temp\s1ko.obj
+btemp 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+start 22 0 CODE 0 init C:\Users\erik\AppData\Local\Temp\s1ko.obj
+_cycle_state 61 0 BANK0 1 dataBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_TMR1H F 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_TMR1L E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+setupPhase@phase 56 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\erik\AppData\Local\Temp\s1ko.obj
+_PORTC 7 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_ANSEL 11E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production\toothbrush_counter.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+main@i 5E 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__Hram 0 0 ABS 0 ram -
+_onoff 79 0 COMMON 1 bssCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__Lram 0 0 ABS 0 ram -
+_setup 50C 0 CODE 0 text7 dist/default/production\toothbrush_counter.X.production.obj
+__size_of_updateLED 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__end_of_ISR 368 0 CODE 0 text12 dist/default/production\toothbrush_counter.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+_PIE1bits 8C 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\erik\AppData\Local\Temp\s1ko.obj
+_LEDSetup 21A 0 CODE 0 text10 dist/default/production\toothbrush_counter.X.production.obj
+_ANSELH 11F 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__end_of_LEDSetup 2CC 0 CODE 0 text10 dist/default/production\toothbrush_counter.X.production.obj
+_phase0 46 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_phase1 49 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_phase2 4C 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+_phase3 4F 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+updateLED@retval 5B 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__end_of_t1setup 580 0 CODE 0 text6 dist/default/production\toothbrush_counter.X.production.obj
+__size_of_turnOnLED 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_LEDOnMask 78 0 COMMON 1 bssCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+__end_of_t2setup 50C 0 CODE 0 text5 dist/default/production\toothbrush_counter.X.production.obj
+__size_of___lbmod 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\erik\AppData\Local\Temp\s1ko.obj
+_ontime 76 0 COMMON 1 dataCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 52 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\erik\AppData\Local\Temp\s1ko.obj
+saved_w 7E 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+___bmul 538 0 CODE 0 text3 dist/default/production\toothbrush_counter.X.production.obj
+main@initialPhase 60 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__Hinit 22 0 CODE 0 init -
+__Linit 22 0 CODE 0 init -
+__end_of_main 162 0 CODE 0 maintext dist/default/production\toothbrush_counter.X.production.obj
+_updown 77 0 COMMON 1 dataCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+___bmul@multiplier 55 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 61 0 BANK0 1 dataBANK0 dist/default/production\toothbrush_counter.X.production.obj
+end_of_initialization 56 0 CODE 0 cinit dist/default/production\toothbrush_counter.X.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+___bmul@multiplicand 52 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__end_of_updateLED 21A 0 CODE 0 text1 dist/default/production\toothbrush_counter.X.production.obj
+_PORTAbits 5 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_T1CONbits 10 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_T2CONbits 12 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+setupLED@led 56 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_LED0Count 20 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_LED1Count 21 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_LED2Count 22 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_LED3Count 23 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__size_of_t1setup 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__end_of_setupLED 474 0 CODE 0 text11 dist/default/production\toothbrush_counter.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__size_of_LEDSetup 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 162 0 CODE 0 text1 dist/default/production\toothbrush_counter.X.production.obj
+__ptext2 3EA 0 CODE 0 text2 dist/default/production\toothbrush_counter.X.production.obj
+__ptext3 538 0 CODE 0 text3 dist/default/production\toothbrush_counter.X.production.obj
+__size_of_t2setup 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__ptext4 474 0 CODE 0 text4 dist/default/production\toothbrush_counter.X.production.obj
+setupLED@LEDMask 52 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__ptext5 4DE 0 CODE 0 text5 dist/default/production\toothbrush_counter.X.production.obj
+__ptext6 55E 0 CODE 0 text6 dist/default/production\toothbrush_counter.X.production.obj
+__ptext7 50C 0 CODE 0 text7 dist/default/production\toothbrush_counter.X.production.obj
+__ptext8 368 0 CODE 0 text8 dist/default/production\toothbrush_counter.X.production.obj
+__ptext9 4AE 0 CODE 0 text9 dist/default/production\toothbrush_counter.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_setupPhase 4AE 0 CODE 0 text9 dist/default/production\toothbrush_counter.X.production.obj
+__pdataCOMMON 75 0 COMMON 1 dataCOMMON dist/default/production\toothbrush_counter.X.production.obj
+setupPhase@blinkCountThreshold 53 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__end_of__initialization 56 0 CODE 0 cinit dist/default/production\toothbrush_counter.X.production.obj
+_CCP1CONbits 17 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+setupLED@initialPhase 54 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+setupLED@initialCount 53 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_LEDOnMaskNext 24 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+___lbmod 3EA 0 CODE 0 text2 dist/default/production\toothbrush_counter.X.production.obj
+__Lstack 0 0 STACK 2 stack -
+_offtime 75 0 COMMON 1 dataCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__size_of_setup 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_turnOnLED 474 0 CODE 0 text4 dist/default/production\toothbrush_counter.X.production.obj
+_updateLED 162 0 CODE 0 text1 dist/default/production\toothbrush_counter.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 5C 0 CODE 0 cinit -
+__Lcinit 26 0 CODE 0 cinit -
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+_t1setup 55E 0 CODE 0 text6 dist/default/production\toothbrush_counter.X.production.obj
+_t2setup 4DE 0 CODE 0 text5 dist/default/production\toothbrush_counter.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 596 0 CODE 0 idataBANK0 dist/default/production\toothbrush_counter.X.production.obj
+setupPhase@nextPhase 54 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+clear_ram0 580 0 CODE 0 clrtext dist/default/production\toothbrush_counter.X.production.obj
+__size_of_setupPhase 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__ptext10 21A 0 CODE 0 text10 dist/default/production\toothbrush_counter.X.production.obj
+__ptext11 434 0 CODE 0 text11 dist/default/production\toothbrush_counter.X.production.obj
+__ptext12 2CC 0 CODE 0 text12 dist/default/production\toothbrush_counter.X.production.obj
+LEDSetup@initialPhase 5A 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+___lbmod@divisor 52 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+turnOnLED@led 53 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\toothbrush_counter.X.production.obj
+updateLED@led 5C 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__Hend_init 26 0 CODE 0 end_init -
+__Lend_init 22 0 CODE 0 end_init -
+__end_of_setup 538 0 CODE 0 text7 dist/default/production\toothbrush_counter.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_setupLED 434 0 CODE 0 text11 dist/default/production\toothbrush_counter.X.production.obj
+_phaseSetup 368 0 CODE 0 text8 dist/default/production\toothbrush_counter.X.production.obj
+_t1IntCount 26 0 BANK0 1 bssBANK0 dist/default/production\toothbrush_counter.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s1ko.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s1ko.obj
+intlevel2 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s1ko.obj
+intlevel3 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s1ko.obj
+intlevel4 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s1ko.obj
+intlevel5 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s1ko.obj
+__end_of_setupPhase 4DE 0 CODE 0 text9 dist/default/production\toothbrush_counter.X.production.obj
+__size_of_setupLED 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+start_initialization 26 0 CODE 0 cinit dist/default/production\toothbrush_counter.X.production.obj
+__end_of_turnOnLED 4AE 0 CODE 0 text4 dist/default/production\toothbrush_counter.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+setupPhase@blinkDivisor 52 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__pmaintext 5C 0 CODE 0 maintext dist/default/production\toothbrush_counter.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__end_of___lbmod 434 0 CODE 0 text2 dist/default/production\toothbrush_counter.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__pidataCOMMON 590 0 CODE 0 idataCOMMON dist/default/production\toothbrush_counter.X.production.obj
+__initialization 26 0 CODE 0 cinit dist/default/production\toothbrush_counter.X.production.obj
+__CFG_FOSC$INTRCIO 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+___lbmod@dividend 56 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+___lbmod@counter 57 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+___bmul@product 54 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+___lbmod@rem 58 0 BANK0 1 cstackBANK0 dist/default/production\toothbrush_counter.X.production.obj
+__size_of___bmul 0 0 ABS 0 - dist/default/production\toothbrush_counter.X.production.obj
+__end_of___bmul 55E 0 CODE 0 text3 dist/default/production\toothbrush_counter.X.production.obj
+__end_of_phaseSetup 3EA 0 CODE 0 text8 dist/default/production\toothbrush_counter.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+intentry 0 4 8 2C8 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 A 1
+bssBANK0 1 20 20 42 1

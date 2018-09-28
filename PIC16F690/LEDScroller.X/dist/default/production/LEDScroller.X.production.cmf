@@ -1,0 +1,597 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\erik\AppData\Local\Temp\s6q0.obj
+end_init CODE 0 11 11 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\LEDScroller.X.production.obj
+cinit CODE 0 13 13 1F 2
+intentry CODE 0 4 4 D 2
+text11 CODE 0 29D 29D 13 2
+text10 CODE 0 219 219 1B 2
+text9 CODE 0 263 263 14 2
+text8 CODE 0 28A 28A 13 2
+text7 CODE 0 1E2 1E2 1C 2
+text6 CODE 0 2D0 2D0 F 2
+text5 CODE 0 FD FD AB 2
+text4 CODE 0 2C0 2C0 10 2
+text3 CODE 0 24E 24E 15 2
+text2 CODE 0 1FE 1FE 1B 2
+text1 CODE 0 277 277 13 2
+maintext CODE 0 1A8 1A8 3A 2
+cstackBANK0 BANK0 1 59 59 F 1
+cstackCOMMON COMMON 1 70 70 A 1
+inittext CODE 0 2B0 2B0 10 2
+clrtext CODE 0 2DF 2DF 8 2
+dataBANK1 BANK1 1 A0 A0 1A 1
+dataBANK0 BANK0 1 68 68 2 1
+bssBANK0 BANK0 1 20 20 39 1
+bssCOMMON COMMON 1 7A 7A 3 1
+strings STRING 0 32 32 CB 2
+idataBANK1 CODE 0 234 234 1A 2
+idataBANK0 CODE 0 2E7 2E7 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 006A-006F 1
+BANK1 00BA-00EF 1
+BANK2 0120-016F 1
+CODE 0002-0003 2
+CODE 02E9-0FFF 2
+COMMON 007D-007D 1
+CONST 0002-0003 2
+CONST 02E9-0FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0002-0003 2
+ENTRY 02E9-0FFF 2
+IDLOC 2000-2003 2
+RAM 006A-006F 1
+RAM 00BA-00EF 1
+RAM 0120-016F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STACK 0120-016F 1
+STRCODE 0002-0003 2
+STRCODE 02E9-0FFF 2
+STRING 0002-0003 2
+STRING 02E9-0FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\LEDScroller.X.production.obj
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":82 4 intentry CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":904 13 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":907 13 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":985 13 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":986 14 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":987 15 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":990 16 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":991 17 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":992 18 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":993 19 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":994 1A cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1026 1D cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1027 1E cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1028 1F cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1029 20 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1030 21 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1031 22 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1032 23 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1033 24 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1034 25 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1038 28 cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1039 2B cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1040 2C cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1041 2E cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1047 2F cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1048 2F cinit CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1049 30 cinit CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":53 FD text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":55 FD text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":56 104 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":57 111 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":59 113 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":61 114 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":106 11A text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":107 120 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":108 120 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":115 122 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":117 12A text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":119 12E text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":121 130 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":122 137 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":123 138 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":125 13C text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":126 143 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":128 144 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":130 153 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":132 162 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":133 164 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":134 168 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":135 175 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":137 179 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":139 17B text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":142 17C text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":106 191 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":148 197 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":150 19A text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":151 19B text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":152 1A1 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":154 1A5 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":156 1A7 text5 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":34 1A8 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":37 1A8 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":39 1AC maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":41 1AF maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":42 1B2 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":43 1B3 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":44 1B7 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":45 1BB maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":46 1BF maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":47 1C3 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":48 1C7 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":49 1C8 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":51 1C9 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":56 1CD maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":57 1D0 maintext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":38 1E2 text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":40 1E5 text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":41 1E9 text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":42 1EB text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":43 1EF text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":44 1F1 text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":45 1F5 text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":47 1F7 text7 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":201 1FE text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":204 1FE text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":206 205 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":207 207 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":204 209 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":209 211 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":210 213 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":211 215 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":216 218 text2 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":188 219 text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":191 21A text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":193 21D text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":194 221 text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":195 225 text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":196 22E text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":198 22F text10 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":23 24E text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":25 24E text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":26 256 text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":28 259 text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":29 25A text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":30 25C text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":32 260 text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":33 262 text3 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":7 263 text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":9 263 text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":11 267 text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":12 26A text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":15 26B text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":17 272 text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":18 276 text9 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":64 277 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":66 277 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":68 27B text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":69 27C text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":70 27D text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":72 27E text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":74 280 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":75 283 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":76 284 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":77 286 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":78 287 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":79 288 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":80 289 text1 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":82 28A text8 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":84 28A text8 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":86 28C text8 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":88 28D text8 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\LEDScroller.c":90 290 text8 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":222 29D text11 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":224 29E text11 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":225 2A3 text11 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":226 2AF text11 CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1000 2B0 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1001 2B0 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1002 2B1 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1003 2B2 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1004 2B3 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1011 2B4 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1012 2B4 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1013 2B6 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1014 2B7 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1015 2B8 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1016 2B9 inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1017 2BA inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1018 2BB inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1019 2BC inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1020 2BD inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1021 2BE inittext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":1022 2BF inittext CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":162 2C0 text4 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":164 2C3 text4 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":165 2C7 text4 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":166 2C9 text4 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":168 2CD text4 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":170 2CF text4 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":175 2D0 text6 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":177 2D0 text6 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":178 2D6 text6 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":179 2DA text6 CODE
+"C:\_projects\microchip\PIC16F690\LEDScroller.X\led_array.c":180 2DE text6 CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":972 2DF clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":973 2DF clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":974 2E0 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":975 2E0 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":976 2E1 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":977 2E2 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":978 2E3 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":979 2E4 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":980 2E5 clrtext CODE
+"C:\Users\erik\AppData\Local\Temp\s6q0.":981 2E6 clrtext CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__end_of_L_H F2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 BA 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_L_A BA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_B C2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_C CA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_D D2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_E DA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_F E2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_G 88 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_H EA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_I F2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_J 92 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_K 9C 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_L FA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_M 70 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_N A6 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__Hintentry 22 0 CODE 0 intentry -
+_L_O 102 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_P 10A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+_L_Q B0 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_R 112 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_S 11A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_T 122 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_U 12A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_V 132 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_W 7C 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_X 13A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_Y 142 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_Z 14A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\LEDScroller.X.production.obj
+_isr 514 0 CODE 0 text8 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_I FA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_currentLedArray 68 0 BANK0 1 dataBANK0 dist/default/production\LEDScroller.X.production.obj
+_main 350 0 CODE 0 maintext dist/default/production\LEDScroller.X.production.obj
+__end_of_L_SPACE 15E 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\erik\AppData\Local\Temp\s6q0.obj
+btemp 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+start 22 0 CODE 0 init C:\Users\erik\AppData\Local\Temp\s6q0.obj
+ledGetLetter@lett 59 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\erik\AppData\Local\Temp\s6q0.obj
+_PORTB 6 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__size_of_ledIncrementRow 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_L_J 9C 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production\LEDScroller.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of__stringtab 70 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__end_of_L_EXCL 156 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+main@i 66 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+_nextLedArray 69 0 BANK0 1 dataBANK0 dist/default/production\LEDScroller.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of__stringdata 1FA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+ledUpdateArr@incrementLetter 5D 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_K A6 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_setup 4EE 0 CODE 0 text1 dist/default/production\LEDScroller.X.production.obj
+_count 7B 0 COMMON 1 bssCOMMON dist/default/production\LEDScroller.X.production.obj
+ledUpdateDisplay@update 73 0 COMMON 1 cstackCOMMON dist/default/production\LEDScroller.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+ledSwitchArray@temp 5A 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_ledScroll 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\erik\AppData\Local\Temp\s6q0.obj
+__end_of_L_L 102 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_L_EXCL 152 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__end_of_ledSetupDisplay 432 0 CODE 0 text2 dist/default/production\LEDScroller.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+_L_LIST A0 0 BANK1 1 dataBANK1 dist/default/production\LEDScroller.X.production.obj
+ledSetupDisplay@tmp_count 5A 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+_letterArrLoc 2B 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_M 7C 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_ledUpdateDisplay 432 0 CODE 0 text10 dist/default/production\LEDScroller.X.production.obj
+__size_of_ledSetData 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+init_fetch0 560 0 CODE 0 inittext dist/default/production\LEDScroller.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+__end_of_L_N B0 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\erik\AppData\Local\Temp\s6q0.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 59 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\erik\AppData\Local\Temp\s6q0.obj
+saved_w 7E 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__Hinit 22 0 CODE 0 init -
+__Linit 22 0 CODE 0 init -
+_ledRow 7C 0 COMMON 1 bssCOMMON dist/default/production\LEDScroller.X.production.obj
+__end_of_main 3C4 0 CODE 0 maintext dist/default/production\LEDScroller.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+_letterArr 2D 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+__size_of_ledGetLetter 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 68 0 BANK0 1 dataBANK0 dist/default/production\LEDScroller.X.production.obj
+end_of_initialization 5E 0 CODE 0 cinit dist/default/production\LEDScroller.X.production.obj
+_ledIncrementRow 4C6 0 CODE 0 text9 dist/default/production\LEDScroller.X.production.obj
+_ledScroll 49C 0 CODE 0 text3 dist/default/production\LEDScroller.X.production.obj
+_ledSetData 53A 0 CODE 0 text11 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_O 10A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__stringtab 64 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_ledUpdateArr 1FA 0 CODE 0 text5 dist/default/production\LEDScroller.X.production.obj
+__end_of_ledDisplayString 5A0 0 CODE 0 text4 dist/default/production\LEDScroller.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_P 112 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_TRISCbits 87 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_L_SPACE 15A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 64 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_letterArrCount 29 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_Q BA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__size_of_ledSetupDisplay 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_ledGetLetter 3FC 0 CODE 0 text7 dist/default/production\LEDScroller.X.production.obj
+__ptext1 4EE 0 CODE 0 text1 dist/default/production\LEDScroller.X.production.obj
+__ptext2 3FC 0 CODE 0 text2 dist/default/production\LEDScroller.X.production.obj
+__ptext3 49C 0 CODE 0 text3 dist/default/production\LEDScroller.X.production.obj
+__ptext4 580 0 CODE 0 text4 dist/default/production\LEDScroller.X.production.obj
+__ptext5 1FA 0 CODE 0 text5 dist/default/production\LEDScroller.X.production.obj
+__size_of_ledSwitchArray 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_L_R 11A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__end_of_ledScroll 4C6 0 CODE 0 text3 dist/default/production\LEDScroller.X.production.obj
+__ptext6 5A0 0 CODE 0 text6 dist/default/production\LEDScroller.X.production.obj
+__ptext7 3C4 0 CODE 0 text7 dist/default/production\LEDScroller.X.production.obj
+__ptext8 514 0 CODE 0 text8 dist/default/production\LEDScroller.X.production.obj
+__ptext9 4C6 0 CODE 0 text9 dist/default/production\LEDScroller.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of_ledUpdateArr 350 0 CODE 0 text5 dist/default/production\LEDScroller.X.production.obj
+__size_of_ledUpdateArr 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_L_S 122 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__end_of__initialization 5E 0 CODE 0 cinit dist/default/production\LEDScroller.X.production.obj
+__end_of_ledSwitchArray 5BE 0 CODE 0 text6 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_T 12A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__end_of_isr 53A 0 CODE 0 text8 dist/default/production\LEDScroller.X.production.obj
+__Hspace_1 BA 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__end_of_L_U 132 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__size_of_setup 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 64 0 CODE 0 cinit -
+__Lcinit 26 0 CODE 0 cinit -
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_ledUpdateDisplay 468 0 CODE 0 text10 dist/default/production\LEDScroller.X.production.obj
+__size_of_ledDisplayString 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_L_V 13A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 5CE 0 CODE 0 idataBANK0 dist/default/production\LEDScroller.X.production.obj
+clear_ram0 5BE 0 CODE 0 clrtext dist/default/production\LEDScroller.X.production.obj
+_ledSwitchArray 5A0 0 CODE 0 text6 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_W 88 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__ptext10 432 0 CODE 0 text10 dist/default/production\LEDScroller.X.production.obj
+__ptext11 53A 0 CODE 0 text11 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_X 142 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_ledArray0 2F 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__pidataBANK1 468 0 CODE 0 idataBANK1 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_A C2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_ledArray1 44 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+ledUpdateArr@i 62 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\LEDScroller.X.production.obj
+__size_of_ledUpdateDisplay 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_L_Y 14A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__Hend_init 26 0 CODE 0 end_init -
+_ledDisplayString 580 0 CODE 0 text4 dist/default/production\LEDScroller.X.production.obj
+__Lend_init 22 0 CODE 0 end_init -
+__end_of_L_B CA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+ledDisplayString@str 64 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+ledSetData@ledDisplayData 71 0 COMMON 1 cstackCOMMON dist/default/production\LEDScroller.X.production.obj
+_L_PERIOD 156 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_myLedArray 20 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+__end_of_setup 514 0 CODE 0 text1 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_Z 152 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_PORTCGhost 7A 0 COMMON 1 bssCOMMON dist/default/production\LEDScroller.X.production.obj
+__end_of_L_C D2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__stringdata 15E 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+init_ram0 568 0 CODE 0 inittext dist/default/production\LEDScroller.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s6q0.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s6q0.obj
+intlevel2 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s6q0.obj
+__end_of_L_D DA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s6q0.obj
+intlevel4 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s6q0.obj
+intlevel5 0 0 CODE 0 functab C:\Users\erik\AppData\Local\Temp\s6q0.obj
+__end_of_L_PERIOD 15A 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+ledUpdateArr@letterTmpLoc 60 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_L_E E2 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LEDScroller.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+start_initialization 26 0 CODE 0 cinit dist/default/production\LEDScroller.X.production.obj
+__end_of_ledSetData 560 0 CODE 0 text11 dist/default/production\LEDScroller.X.production.obj
+_ledGetLetter 3C4 0 CODE 0 text7 dist/default/production\LEDScroller.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__pmaintext 350 0 CODE 0 maintext dist/default/production\LEDScroller.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+__Linittext 0 0 ABS 0 inittext -
+__end_of_L_F EA 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_startAgainFlag 2E 0 BANK0 1 bssBANK0 dist/default/production\LEDScroller.X.production.obj
+ledUpdateArr@letterTmp 5F 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+__initialization 26 0 CODE 0 cinit dist/default/production\LEDScroller.X.production.obj
+ledUpdateArr@letterArrTmp 5E 0 BANK0 1 cstackBANK0 dist/default/production\LEDScroller.X.production.obj
+__stringbase 6E 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+_ledSetupDisplay 3FC 0 CODE 0 text2 dist/default/production\LEDScroller.X.production.obj
+__CFG_FOSC$INTRCCLK 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\LEDScroller.X.production.obj
+__end_of_ledIncrementRow 4EE 0 CODE 0 text9 dist/default/production\LEDScroller.X.production.obj
+__end_of_L_G 92 0 STRING 0 strings dist/default/production\LEDScroller.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+intentry 0 4 8 2E 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 D 1
+bssBANK0 1 20 20 4A 1
+dataBANK1 1 A0 A0 1A 1
+strings 0 32 64 CB 2
+text5 0 FD 1FA 1EC 2

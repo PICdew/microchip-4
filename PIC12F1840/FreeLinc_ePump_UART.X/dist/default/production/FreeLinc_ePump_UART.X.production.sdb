@@ -1,0 +1,218 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1840 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.32\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"39 C:\_projects\microchip\PIC12F1840\FreeLinc_ePump_UART.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"49
+[v _isr isr `II(v  1 e 0 0 ]
+"58
+[v _setup setup `(v  1 e 0 0 ]
+[s S87 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"358 C:\Program Files (x86)\Microchip\xc8\v1.32\include\pic12f1840.h
+[s S96 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S101 . 1 `S87 1 . 1 0 `S96 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES101  1 e 1 @11 ]
+[s S23 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"478
+[u S32 . 1 `S23 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES32  1 e 1 @17 ]
+"1037
+[v _PIE1bits PIE1bits `VES32  1 e 1 @145 ]
+[s S119 . 1 `uc 1 CCP1SEL 1 0 :1:0 
+`uc 1 P1BSEL 1 0 :1:1 
+`uc 1 TXCKSEL 1 0 :1:2 
+`uc 1 T1GSEL 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSSEL 1 0 :1:5 
+`uc 1 SDOSEL 1 0 :1:6 
+`uc 1 RXDTSEL 1 0 :1:7 
+]
+"2225
+[s S128 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SS1SEL 1 0 :1:5 
+`uc 1 SDO1SEL 1 0 :1:6 
+]
+[u S132 . 1 `S119 1 . 1 0 `S128 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES132  1 e 1 @285 ]
+[s S67 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+]
+"2356
+[s S73 . 1 `uc 1 ANSELA 1 0 :5:0 
+]
+[u S75 . 1 `S67 1 . 1 0 `S73 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES75  1 e 1 @396 ]
+"2385
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2440
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"2491
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"2552
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"2604
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2623
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"2657
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"2755
+[v _RCSTAbits RCSTAbits `VES32  1 e 1 @413 ]
+"2816
+[v _TXSTAbits TXSTAbits `VES32  1 e 1 @414 ]
+"2877
+[v _BAUDCONbits BAUDCONbits `VES32  1 e 1 @415 ]
+"4840
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"4968
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"5176
+[v _RD RD `VEb  1 e 0 @3240 ]
+"5430
+[v _WR WR `VEb  1 e 0 @3241 ]
+"5432
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"34 C:\_projects\microchip\PIC12F1840\FreeLinc_ePump_UART.X\main.c
+[v _str str `[19]uc  1 e 19 0 ]
+"35
+[v _strLen strLen `VEuc  1 e 1 0 ]
+"39
+[v _main main `(i  1 e 2 0 ]
+{
+"47
+} 0
+"58
+[v _setup setup `(v  1 e 0 0 ]
+{
+"78
+} 0
+"49
+[v _isr isr `II(v  1 e 0 0 ]
+{
+"56
+} 0

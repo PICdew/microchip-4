@@ -1,0 +1,20 @@
+_uart_tx_buff_empty: CODE, 1197 0 8
+i1_putch: CODE, 1016 0 37
+_uart_interrupt_handler: CODE, 796 0 87
+__stringdata: STRCODE, 256 0 188
+_putch: CODE, 977 0 39
+i1_uart_tx_buff_full: CODE, 1103 0 21
+_main: CODE, 444 0 159
+_stricmp: CODE, 883 0 52
+_getstr: CODE, 702 0 94
+_uart_rx_buff_empty: CODE, 1189 0 8
+_uart_tx_buff_full: CODE, 1081 0 22
+__initialization: CODE, 18 0 28
+_isr: CODE, 4 0 12
+_uart_setup: CODE, 935 0 42
+_uart_rx_buff_full: CODE, 1124 0 21
+_getch: CODE, 1053 0 28
+_printf: CODE, 603 0 99
+_setup: CODE, 1181 0 8
+_toupper: CODE, 1165 0 16
+Total: 969

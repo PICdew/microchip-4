@@ -1,0 +1,946 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.33 build 59893 
+                                                                                               Wed Dec 30 16:15:23 2015
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 59893
+     1                           	processor	16F1455
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	text0,local,class=CODE,merge=1,delta=2
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+     7                           	psect	maintext,global,class=CODE,merge=1,split=1,delta=2
+     8                           	psect	text1,local,class=CODE,merge=1,delta=2
+     9                           	psect	text2,local,class=CODE,merge=1,delta=2
+    10                           	dabs	1,0x7E,2
+    11  0000                     	;# 
+    12  0001                     	;# 
+    13  0002                     	;# 
+    14  0003                     	;# 
+    15  0004                     	;# 
+    16  0005                     	;# 
+    17  0006                     	;# 
+    18  0007                     	;# 
+    19  0008                     	;# 
+    20  0009                     	;# 
+    21  000A                     	;# 
+    22  000B                     	;# 
+    23  000C                     	;# 
+    24  000E                     	;# 
+    25  0011                     	;# 
+    26  0012                     	;# 
+    27  0015                     	;# 
+    28  0016                     	;# 
+    29  0016                     	;# 
+    30  0017                     	;# 
+    31  0018                     	;# 
+    32  0019                     	;# 
+    33  001A                     	;# 
+    34  001B                     	;# 
+    35  001C                     	;# 
+    36  008C                     	;# 
+    37  008E                     	;# 
+    38  0091                     	;# 
+    39  0092                     	;# 
+    40  0095                     	;# 
+    41  0096                     	;# 
+    42  0097                     	;# 
+    43  0098                     	;# 
+    44  0099                     	;# 
+    45  009A                     	;# 
+    46  009B                     	;# 
+    47  009B                     	;# 
+    48  009C                     	;# 
+    49  009D                     	;# 
+    50  009E                     	;# 
+    51  009F                     	;# 
+    52  010C                     	;# 
+    53  010E                     	;# 
+    54  0111                     	;# 
+    55  0112                     	;# 
+    56  0113                     	;# 
+    57  0114                     	;# 
+    58  0115                     	;# 
+    59  0116                     	;# 
+    60  0117                     	;# 
+    61  0118                     	;# 
+    62  0119                     	;# 
+    63  011D                     	;# 
+    64  018C                     	;# 
+    65  018E                     	;# 
+    66  0191                     	;# 
+    67  0191                     	;# 
+    68  0192                     	;# 
+    69  0193                     	;# 
+    70  0193                     	;# 
+    71  0194                     	;# 
+    72  0195                     	;# 
+    73  0196                     	;# 
+    74  0197                     	;# 
+    75  0199                     	;# 
+    76  019A                     	;# 
+    77  019B                     	;# 
+    78  019B                     	;# 
+    79  019C                     	;# 
+    80  019D                     	;# 
+    81  019E                     	;# 
+    82  019F                     	;# 
+    83  020C                     	;# 
+    84  0211                     	;# 
+    85  0211                     	;# 
+    86  0212                     	;# 
+    87  0212                     	;# 
+    88  0213                     	;# 
+    89  0213                     	;# 
+    90  0214                     	;# 
+    91  0214                     	;# 
+    92  0215                     	;# 
+    93  0215                     	;# 
+    94  0215                     	;# 
+    95  0216                     	;# 
+    96  0216                     	;# 
+    97  0217                     	;# 
+    98  0217                     	;# 
+    99  0391                     	;# 
+   100  0392                     	;# 
+   101  0393                     	;# 
+   102  039A                     	;# 
+   103  039B                     	;# 
+   104  0611                     	;# 
+   105  0612                     	;# 
+   106  0613                     	;# 
+   107  0613                     	;# 
+   108  0614                     	;# 
+   109  0615                     	;# 
+   110  0616                     	;# 
+   111  0616                     	;# 
+   112  0691                     	;# 
+   113  0692                     	;# 
+   114  0693                     	;# 
+   115  0694                     	;# 
+   116  0695                     	;# 
+   117  0E8E                     	;# 
+   118  0E8F                     	;# 
+   119  0E90                     	;# 
+   120  0E91                     	;# 
+   121  0E92                     	;# 
+   122  0E93                     	;# 
+   123  0E94                     	;# 
+   124  0E94                     	;# 
+   125  0E95                     	;# 
+   126  0E96                     	;# 
+   127  0E97                     	;# 
+   128  0E98                     	;# 
+   129  0E99                     	;# 
+   130  0E9A                     	;# 
+   131  0E9B                     	;# 
+   132  0E9C                     	;# 
+   133  0E9D                     	;# 
+   134  0E9E                     	;# 
+   135  0E9F                     	;# 
+   136  0FE4                     	;# 
+   137  0FE5                     	;# 
+   138  0FE6                     	;# 
+   139  0FE7                     	;# 
+   140  0FE8                     	;# 
+   141  0FE9                     	;# 
+   142  0FEA                     	;# 
+   143  0FEB                     	;# 
+   144  0FED                     	;# 
+   145  0FEE                     	;# 
+   146  0FEF                     	;# 
+   147  0000                     	;# 
+   148  0001                     	;# 
+   149  0002                     	;# 
+   150  0003                     	;# 
+   151  0004                     	;# 
+   152  0005                     	;# 
+   153  0006                     	;# 
+   154  0007                     	;# 
+   155  0008                     	;# 
+   156  0009                     	;# 
+   157  000A                     	;# 
+   158  000B                     	;# 
+   159  000C                     	;# 
+   160  000E                     	;# 
+   161  0011                     	;# 
+   162  0012                     	;# 
+   163  0015                     	;# 
+   164  0016                     	;# 
+   165  0016                     	;# 
+   166  0017                     	;# 
+   167  0018                     	;# 
+   168  0019                     	;# 
+   169  001A                     	;# 
+   170  001B                     	;# 
+   171  001C                     	;# 
+   172  008C                     	;# 
+   173  008E                     	;# 
+   174  0091                     	;# 
+   175  0092                     	;# 
+   176  0095                     	;# 
+   177  0096                     	;# 
+   178  0097                     	;# 
+   179  0098                     	;# 
+   180  0099                     	;# 
+   181  009A                     	;# 
+   182  009B                     	;# 
+   183  009B                     	;# 
+   184  009C                     	;# 
+   185  009D                     	;# 
+   186  009E                     	;# 
+   187  009F                     	;# 
+   188  010C                     	;# 
+   189  010E                     	;# 
+   190  0111                     	;# 
+   191  0112                     	;# 
+   192  0113                     	;# 
+   193  0114                     	;# 
+   194  0115                     	;# 
+   195  0116                     	;# 
+   196  0117                     	;# 
+   197  0118                     	;# 
+   198  0119                     	;# 
+   199  011D                     	;# 
+   200  018C                     	;# 
+   201  018E                     	;# 
+   202  0191                     	;# 
+   203  0191                     	;# 
+   204  0192                     	;# 
+   205  0193                     	;# 
+   206  0193                     	;# 
+   207  0194                     	;# 
+   208  0195                     	;# 
+   209  0196                     	;# 
+   210  0197                     	;# 
+   211  0199                     	;# 
+   212  019A                     	;# 
+   213  019B                     	;# 
+   214  019B                     	;# 
+   215  019C                     	;# 
+   216  019D                     	;# 
+   217  019E                     	;# 
+   218  019F                     	;# 
+   219  020C                     	;# 
+   220  0211                     	;# 
+   221  0211                     	;# 
+   222  0212                     	;# 
+   223  0212                     	;# 
+   224  0213                     	;# 
+   225  0213                     	;# 
+   226  0214                     	;# 
+   227  0214                     	;# 
+   228  0215                     	;# 
+   229  0215                     	;# 
+   230  0215                     	;# 
+   231  0216                     	;# 
+   232  0216                     	;# 
+   233  0217                     	;# 
+   234  0217                     	;# 
+   235  0391                     	;# 
+   236  0392                     	;# 
+   237  0393                     	;# 
+   238  039A                     	;# 
+   239  039B                     	;# 
+   240  0611                     	;# 
+   241  0612                     	;# 
+   242  0613                     	;# 
+   243  0613                     	;# 
+   244  0614                     	;# 
+   245  0615                     	;# 
+   246  0616                     	;# 
+   247  0616                     	;# 
+   248  0691                     	;# 
+   249  0692                     	;# 
+   250  0693                     	;# 
+   251  0694                     	;# 
+   252  0695                     	;# 
+   253  0E8E                     	;# 
+   254  0E8F                     	;# 
+   255  0E90                     	;# 
+   256  0E91                     	;# 
+   257  0E92                     	;# 
+   258  0E93                     	;# 
+   259  0E94                     	;# 
+   260  0E94                     	;# 
+   261  0E95                     	;# 
+   262  0E96                     	;# 
+   263  0E97                     	;# 
+   264  0E98                     	;# 
+   265  0E99                     	;# 
+   266  0E9A                     	;# 
+   267  0E9B                     	;# 
+   268  0E9C                     	;# 
+   269  0E9D                     	;# 
+   270  0E9E                     	;# 
+   271  0E9F                     	;# 
+   272  0FE4                     	;# 
+   273  0FE5                     	;# 
+   274  0FE6                     	;# 
+   275  0FE7                     	;# 
+   276  0FE8                     	;# 
+   277  0FE9                     	;# 
+   278  0FEA                     	;# 
+   279  0FEB                     	;# 
+   280  0FED                     	;# 
+   281  0FEE                     	;# 
+   282  0FEF                     	;# 
+   283  000E                     _PORTCbits	set	14
+   284  0099                     _OSCCONbits	set	153
+   285  008C                     _TRISA	set	140
+   286  008E                     _TRISC	set	142
+   287  010C                     _LATAbits	set	268
+   288  010E                     _LATCbits	set	270
+   289  018C                     _ANSELA	set	396
+   290  018E                     _ANSELC	set	398
+   291                           
+   292                           	psect	text0
+   293  0000                     __ptext0:	
+   294                           ; #config settings
+   295                           
+   296                           
+   297                           ;psect for function _pollButtons
+   298  0000                     
+   299                           	psect	cinit
+   300  07FC                     start_initialization:	
+   301  07FC                     __initialization:	
+   302  07FC                     end_of_initialization:	
+   303                           ;End of C runtime variable initialization code
+   304                           
+   305  07FC                     __end_of__initialization:	
+   306  07FC  107E               	bcf	pic14e$flags,0	;clear compiler interrupt flag
+   307  07FD  0020               	movlb	0
+   308  07FE  3187  2FB6         	ljmp	_main	;jump to C main() function
+   309                           
+   310                           	psect	cstackCOMMON
+   311  0070                     __pcstackCOMMON:	
+   312  0070                     ?_setup:	
+   313  0070                     ??_setup:	
+   314                           ; 0 bytes @ 0x0
+   315                           
+   316  0070                     ??_pollButtons:	
+   317                           ; 0 bytes @ 0x0
+   318                           
+   319  0070                     ?_pollButtons:	
+   320                           ; 0 bytes @ 0x0
+   321                           
+   322  0070                     ?_main:	
+   323                           ; 1 bytes @ 0x0
+   324                           
+   325                           
+   326                           ; 2 bytes @ 0x0
+   327  0070                     	ds	3
+   328  0073                     pollButtons@buttons:	
+   329                           
+   330                           ; 1 bytes @ 0x3
+   331  0073                     	ds	1
+   332  0074                     ??_main:	
+   333                           
+   334                           ; 0 bytes @ 0x4
+   335  0074                     	ds	2
+   336  0076                     main@buttons:	
+   337                           
+   338                           ; 1 bytes @ 0x6
+   339  0076                     	ds	1
+   340                           
+   341                           	psect	maintext
+   342  07B6                     __pmaintext:	
+   343 ;;
+   344 ;;Main: autosize = 0, tempsize = 2, incstack = 0, save=0
+   345 ;;
+   346 ;; *************** function _main *****************
+   347 ;; Defined at:
+   348 ;;		line 13 in file "bbgame.c"
+   349 ;; Parameters:    Size  Location     Type
+   350 ;;		None
+   351 ;; Auto vars:     Size  Location     Type
+   352 ;;  buttons         1    6[COMMON] unsigned char 
+   353 ;; Return value:  Size  Location     Type
+   354 ;;                  2   22[COMMON] int 
+   355 ;; Registers used:
+   356 ;;		wreg, status,2, status,0, pclath, cstack
+   357 ;; Tracked objects:
+   358 ;;		On entry : 17F/0
+   359 ;;		On exit  : 0/0
+   360 ;;		Unchanged: 0/0
+   361 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12
+   362 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   363 ;;      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   364 ;;      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   365 ;;      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   366 ;;Total ram usage:        3 bytes
+   367 ;; Hardware stack levels required when called:    1
+   368 ;; This function calls:
+   369 ;;		_pollButtons
+   370 ;;		_setup
+   371 ;; This function is called by:
+   372 ;;		Startup code after reset
+   373 ;; This function uses a non-reentrant model
+   374 ;;
+   375                           
+   376                           
+   377                           ;psect for function _main
+   378  07B6                     _main:	
+   379                           
+   380                           ;bbgame.c: 16: char buttons = 0;
+   381                           
+   382                           ;incstack = 0
+   383                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
+   384  07B6  01F6               	clrf	main@buttons
+   385                           
+   386                           ;bbgame.c: 17: setup();
+   387  07B7  3187  276E  3187   	fcall	_setup
+   388  07BA                     l449:	
+   389                           ;bbgame.c: 19: while (1)
+   390                           
+   391                           
+   392                           ;bbgame.c: 20: {
+   393                           ;bbgame.c: 21: _delay((unsigned long)((5)*(48000000/4000.0)));
+   394  07BA  304E               	movlw	78
+   395  07BB  00F5               	movwf	??_main+1
+   396  07BC  30EB               	movlw	235
+   397  07BD  00F4               	movwf	??_main
+   398  07BE                     u57:	
+   399  07BE  0BF4               	decfsz	??_main,f
+   400  07BF  2FBE               	goto	u57
+   401  07C0  0BF5               	decfsz	??_main+1,f
+   402  07C1  2FBE               	goto	u57
+   403                           
+   404                           ;bbgame.c: 25: buttons = pollButtons();
+   405  07C2  3187  2779  3187   	fcall	_pollButtons
+   406  07C5  00F4               	movwf	??_main
+   407  07C6  0874               	movf	??_main,w
+   408  07C7  00F6               	movwf	main@buttons
+   409                           
+   410                           ;bbgame.c: 26: LATCbits.LATC4 = (buttons & 0x01);
+   411  07C8  0876               	movf	main@buttons,w
+   412  07C9  3901               	andlw	1
+   413  07CA  00F4               	movwf	??_main
+   414  07CB  0EF4               	swapf	??_main,f
+   415  07CC  0022               	movlb	2	; select bank2
+   416  07CD  080E               	movf	14,w	;volatile
+   417  07CE  0674               	xorwf	??_main,w
+   418  07CF  39EF               	andlw	-17
+   419  07D0  0674               	xorwf	??_main,w
+   420  07D1  008E               	movwf	14	;volatile
+   421                           
+   422                           ;bbgame.c: 27: LATAbits.LATA4 = (buttons & 0x02) >> 1;
+   423  07D2  3676               	lsrf	main@buttons,w
+   424  07D3  3901               	andlw	1
+   425  07D4  00F4               	movwf	??_main
+   426  07D5  0EF4               	swapf	??_main,f
+   427  07D6  080C               	movf	12,w	;volatile
+   428  07D7  0674               	xorwf	??_main,w
+   429  07D8  39EF               	andlw	-17
+   430  07D9  0674               	xorwf	??_main,w
+   431  07DA  008C               	movwf	12	;volatile
+   432                           
+   433                           ;bbgame.c: 28: LATCbits.LATC5 = (buttons & 0x04) >> 2;
+   434  07DB  0876               	movf	main@buttons,w
+   435  07DC  00F4               	movwf	??_main
+   436  07DD  3002               	movlw	2
+   437  07DE                     u35:	
+   438  07DE  36F4               	lsrf	??_main,f
+   439  07DF  0B89               	decfsz	9,f
+   440  07E0  2FDE               	goto	u35
+   441  07E1  0874               	movf	??_main,w
+   442  07E2  3901               	andlw	1
+   443  07E3  00F5               	movwf	??_main+1
+   444  07E4  0EF5               	swapf	??_main+1,f
+   445  07E5  0DF5               	rlf	??_main+1,f
+   446  07E6  080E               	movf	14,w	;volatile
+   447  07E7  0675               	xorwf	??_main+1,w
+   448  07E8  39DF               	andlw	-33
+   449  07E9  0675               	xorwf	??_main+1,w
+   450  07EA  008E               	movwf	14	;volatile
+   451                           
+   452                           ;bbgame.c: 29: LATAbits.LATA5 = (buttons & 0x08) >> 3;
+   453  07EB  0876               	movf	main@buttons,w
+   454  07EC  00F4               	movwf	??_main
+   455  07ED  3003               	movlw	3
+   456  07EE                     u45:	
+   457  07EE  36F4               	lsrf	??_main,f
+   458  07EF  0B89               	decfsz	9,f
+   459  07F0  2FEE               	goto	u45
+   460  07F1  0874               	movf	??_main,w
+   461  07F2  3901               	andlw	1
+   462  07F3  00F5               	movwf	??_main+1
+   463  07F4  0EF5               	swapf	??_main+1,f
+   464  07F5  0DF5               	rlf	??_main+1,f
+   465  07F6  080C               	movf	12,w	;volatile
+   466  07F7  0675               	xorwf	??_main+1,w
+   467  07F8  39DF               	andlw	-33
+   468  07F9  0675               	xorwf	??_main+1,w
+   469  07FA  008C               	movwf	12	;volatile
+   470  07FB  2FBA               	goto	l449
+   471  07FC                     __end_of_main:	
+   472                           ;bbgame.c: 40: }
+   473                           ;bbgame.c: 41: return;
+   474                           
+   475                           
+   476                           	psect	text1
+   477  076E                     __ptext1:	
+   478 ;; *************** function _setup *****************
+   479 ;; Defined at:
+   480 ;;		line 44 in file "bbgame.c"
+   481 ;; Parameters:    Size  Location     Type
+   482 ;;		None
+   483 ;; Auto vars:     Size  Location     Type
+   484 ;;		None
+   485 ;; Return value:  Size  Location     Type
+   486 ;;		None               void
+   487 ;; Registers used:
+   488 ;;		wreg, status,2, status,0
+   489 ;; Tracked objects:
+   490 ;;		On entry : 0/0
+   491 ;;		On exit  : 0/0
+   492 ;;		Unchanged: 0/0
+   493 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12
+   494 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   495 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   496 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   497 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   498 ;;Total ram usage:        0 bytes
+   499 ;; Hardware stack levels used:    1
+   500 ;; This function calls:
+   501 ;;		Nothing
+   502 ;; This function is called by:
+   503 ;;		_main
+   504 ;; This function uses a non-reentrant model
+   505 ;;
+   506                           
+   507                           
+   508                           ;psect for function _setup
+   509  076E                     _setup:	
+   510                           
+   511                           ;bbgame.c: 46: OSCCONbits.IRCF = 0b1111;
+   512                           
+   513                           ;incstack = 0
+   514                           ; Regs used in _setup: [wreg+status,2+status,0]
+   515  076E  303C               	movlw	60
+   516  076F  0021               	movlb	1	; select bank1
+   517  0770  0499               	iorwf	25,f	;volatile
+   518                           
+   519                           ;bbgame.c: 47: TRISC = 0xC3;
+   520  0771  30C3               	movlw	195
+   521  0772  008E               	movwf	14	;volatile
+   522                           
+   523                           ;bbgame.c: 48: TRISA = 0xCF;
+   524  0773  30CF               	movlw	207
+   525  0774  008C               	movwf	12	;volatile
+   526                           
+   527                           ;bbgame.c: 49: ANSELA = 0x00;
+   528  0775  0023               	movlb	3	; select bank3
+   529  0776  018C               	clrf	12	;volatile
+   530                           
+   531                           ;bbgame.c: 50: ANSELC = 0x00;
+   532  0777  018E               	clrf	14	;volatile
+   533  0778  0008               	return
+   534  0779                     __end_of_setup:	
+   535                           
+   536                           	psect	text2
+   537  0779                     __ptext2:	
+   538 ;; *************** function _pollButtons *****************
+   539 ;; Defined at:
+   540 ;;		line 3 in file "buttons.c"
+   541 ;; Parameters:    Size  Location     Type
+   542 ;;		None
+   543 ;; Auto vars:     Size  Location     Type
+   544 ;;  buttons         1    3[COMMON] unsigned char 
+   545 ;; Return value:  Size  Location     Type
+   546 ;;                  1    wreg      unsigned char 
+   547 ;; Registers used:
+   548 ;;		wreg, status,2, status,0
+   549 ;; Tracked objects:
+   550 ;;		On entry : 0/0
+   551 ;;		On exit  : 0/0
+   552 ;;		Unchanged: 0/0
+   553 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12
+   554 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   555 ;;      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   556 ;;      Temps:          3       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   557 ;;      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   558 ;;Total ram usage:        4 bytes
+   559 ;; Hardware stack levels used:    1
+   560 ;; This function calls:
+   561 ;;		Nothing
+   562 ;; This function is called by:
+   563 ;;		_main
+   564 ;; This function uses a non-reentrant model
+   565 ;;
+   566                           
+   567                           
+   568                           ;psect for function _pollButtons
+   569  0779                     _pollButtons:	
+   570                           
+   571                           ;buttons.c: 5: char buttons = 0;
+   572                           
+   573                           ;incstack = 0
+   574                           ; Regs used in _pollButtons: [wreg+status,2+status,0]
+   575  0779  01F3               	clrf	pollButtons@buttons
+   576                           
+   577                           ;buttons.c: 6: LATCbits.LATC3 = 1;
+   578  077A  0022               	movlb	2	; select bank2
+   579  077B  158E               	bsf	14,3	;volatile
+   580                           
+   581                           ;buttons.c: 7: LATCbits.LATC2 = 0;
+   582  077C  110E               	bcf	14,2	;volatile
+   583                           
+   584                           ;buttons.c: 8: _delay((unsigned long)((1)*(48000000/4000.0)));
+   585  077D  3010               	movlw	16
+   586  077E  00F1               	movwf	??_pollButtons+1
+   587  077F  3094               	movlw	148
+   588  0780  00F0               	movwf	??_pollButtons
+   589  0781                     u67:	
+   590  0781  0BF0               	decfsz	??_pollButtons,f
+   591  0782  2F81               	goto	u67
+   592  0783  0BF1               	decfsz	??_pollButtons+1,f
+   593  0784  2F81               	goto	u67
+   594  0785  0000               	nop
+   595                           
+   596                           ;buttons.c: 9: buttons = (PORTCbits.RC1 << 3) | (PORTCbits.RC0 << 2);
+   597  0786  0020               	movlb	0	; select bank0
+   598  0787  080E               	movf	14,w	;volatile
+   599  0788  3901               	andlw	1
+   600  0789  00F0               	movwf	??_pollButtons
+   601  078A  3002               	movlw	2
+   602  078B                     u15:	
+   603  078B  35F0               	lslf	??_pollButtons,f
+   604  078C  0B89               	decfsz	9,f
+   605  078D  2F8B               	goto	u15
+   606  078E  0C0E               	rrf	14,w	;volatile
+   607  078F  3901               	andlw	1
+   608  0790  00F1               	movwf	??_pollButtons+1
+   609  0791  3002               	movlw	2
+   610  0792                     u25:	
+   611  0792  35F1               	lslf	??_pollButtons+1,f
+   612  0793  3EFF               	addlw	-1
+   613  0794  1D03               	skipz
+   614  0795  2F92               	goto	u25
+   615  0796  3571               	lslf	??_pollButtons+1,w
+   616  0797  0470               	iorwf	??_pollButtons,w
+   617  0798  00F2               	movwf	??_pollButtons+2
+   618  0799  0872               	movf	??_pollButtons+2,w
+   619  079A  00F3               	movwf	pollButtons@buttons
+   620                           
+   621                           ;buttons.c: 10: LATCbits.LATC3 = 0;
+   622  079B  0022               	movlb	2	; select bank2
+   623  079C  118E               	bcf	14,3	;volatile
+   624                           
+   625                           ;buttons.c: 11: LATCbits.LATC2 = 1;
+   626  079D  150E               	bsf	14,2	;volatile
+   627                           
+   628                           ;buttons.c: 12: _delay((unsigned long)((1)*(48000000/4000.0)));
+   629  079E  3010               	movlw	16
+   630  079F  00F1               	movwf	??_pollButtons+1
+   631  07A0  3094               	movlw	148
+   632  07A1  00F0               	movwf	??_pollButtons
+   633  07A2                     u77:	
+   634  07A2  0BF0               	decfsz	??_pollButtons,f
+   635  07A3  2FA2               	goto	u77
+   636  07A4  0BF1               	decfsz	??_pollButtons+1,f
+   637  07A5  2FA2               	goto	u77
+   638  07A6  0000               	nop
+   639                           
+   640                           ;buttons.c: 13: buttons |= (PORTCbits.RC1 << 1) | (PORTCbits.RC0);
+   641  07A7  0020               	movlb	0	; select bank0
+   642  07A8  080E               	movf	14,w	;volatile
+   643  07A9  3901               	andlw	1
+   644  07AA  00F0               	movwf	??_pollButtons
+   645  07AB  0C0E               	rrf	14,w	;volatile
+   646  07AC  3901               	andlw	1
+   647  07AD  0709               	addwf	9,w
+   648  07AE  0470               	iorwf	??_pollButtons,w
+   649  07AF  00F1               	movwf	??_pollButtons+1
+   650  07B0  0871               	movf	??_pollButtons+1,w
+   651  07B1  04F3               	iorwf	pollButtons@buttons,f
+   652                           
+   653                           ;buttons.c: 14: LATCbits.LATC2 = 0;
+   654  07B2  0022               	movlb	2	; select bank2
+   655  07B3  110E               	bcf	14,2	;volatile
+   656                           
+   657                           ;buttons.c: 15: return buttons;
+   658  07B4  0873               	movf	pollButtons@buttons,w
+   659  07B5  0008               	return
+   660  07B6                     __end_of_pollButtons:	
+   661  007E                     btemp	set	126	;btemp
+   662  007E                     pic14e$flags	set	126
+   663  007E                     wtemp	set	126
+   664  007E                     wtemp0	set	126
+   665  0080                     wtemp1	set	128
+   666  0082                     wtemp2	set	130
+   667  0084                     wtemp3	set	132
+   668  0086                     wtemp4	set	134
+   669  0088                     wtemp5	set	136
+   670  007F                     wtemp6	set	127
+   671  007E                     ttemp	set	126
+   672  007E                     ttemp0	set	126
+   673  0081                     ttemp1	set	129
+   674  0084                     ttemp2	set	132
+   675  0087                     ttemp3	set	135
+   676  007F                     ttemp4	set	127
+   677  007E                     ltemp	set	126
+   678  007E                     ltemp0	set	126
+   679  0082                     ltemp1	set	130
+   680  0086                     ltemp2	set	134
+   681  0080                     ltemp3	set	128
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      7       7
+    BANK0            80      0       0
+    BANK1            80      0       0
+    BANK2            80      0       0
+    BANK3            80      0       0
+    BANK4            80      0       0
+    BANK5            80      0       0
+    BANK6            80      0       0
+    BANK7            80      0       0
+    BANK8            80      0       0
+    BANK9            80      0       0
+    BANK10           80      0       0
+    BANK11           80      0       0
+    BANK12           48      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    _main->_pollButtons
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Critical Paths under _main in BANK6
+
+    None.
+
+Critical Paths under _main in BANK7
+
+    None.
+
+Critical Paths under _main in BANK8
+
+    None.
+
+Critical Paths under _main in BANK9
+
+    None.
+
+Critical Paths under _main in BANK10
+
+    None.
+
+Critical Paths under _main in BANK11
+
+    None.
+
+Critical Paths under _main in BANK12
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 3     3      0      75
+                                              4 COMMON     3     3      0
+                        _pollButtons
+                              _setup
+ ---------------------------------------------------------------------------------
+ (1) _setup                                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _pollButtons                                          4     4      0      15
+                                              0 COMMON     4     4      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _pollButtons
+   _setup
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             3F0      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITCOMMON            E      0       0       1        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+COMMON               E      7       7       2       50.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+BITSFR2              0      0       0       3        0.0%
+SFR2                 0      0       0       3        0.0%
+STACK                0      0       0       3        0.0%
+BITBANK0            50      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+BANK0               50      0       0       5        0.0%
+BITSFR4              0      0       0       5        0.0%
+SFR4                 0      0       0       5        0.0%
+BITBANK1            50      0       0       6        0.0%
+BITSFR5              0      0       0       6        0.0%
+SFR5                 0      0       0       6        0.0%
+BANK1               50      0       0       7        0.0%
+BITSFR6              0      0       0       7        0.0%
+SFR6                 0      0       0       7        0.0%
+BITBANK2            50      0       0       8        0.0%
+BITSFR7              0      0       0       8        0.0%
+SFR7                 0      0       0       8        0.0%
+BANK2               50      0       0       9        0.0%
+BITSFR8              0      0       0       9        0.0%
+SFR8                 0      0       0       9        0.0%
+BITBANK3            50      0       0      10        0.0%
+BITSFR9              0      0       0      10        0.0%
+SFR9                 0      0       0      10        0.0%
+BANK3               50      0       0      11        0.0%
+BITSFR10             0      0       0      11        0.0%
+SFR10                0      0       0      11        0.0%
+BITBANK4            50      0       0      12        0.0%
+BITSFR11             0      0       0      12        0.0%
+SFR11                0      0       0      12        0.0%
+BANK4               50      0       0      13        0.0%
+BITSFR12             0      0       0      13        0.0%
+SFR12                0      0       0      13        0.0%
+BITBANK5            50      0       0      14        0.0%
+BITSFR13             0      0       0      14        0.0%
+SFR13                0      0       0      14        0.0%
+BANK5               50      0       0      15        0.0%
+BITSFR14             0      0       0      15        0.0%
+SFR14                0      0       0      15        0.0%
+BITBANK6            50      0       0      16        0.0%
+BITSFR15             0      0       0      16        0.0%
+SFR15                0      0       0      16        0.0%
+BANK6               50      0       0      17        0.0%
+BITSFR16             0      0       0      17        0.0%
+SFR16                0      0       0      17        0.0%
+BITBANK7            50      0       0      18        0.0%
+BITSFR17             0      0       0      18        0.0%
+SFR17                0      0       0      18        0.0%
+BANK7               50      0       0      19        0.0%
+BITSFR18             0      0       0      19        0.0%
+SFR18                0      0       0      19        0.0%
+BITSFR19             0      0       0      20        0.0%
+SFR19                0      0       0      20        0.0%
+ABS                  0      0       0      20        0.0%
+BITBANK8            50      0       0      21        0.0%
+BITSFR20             0      0       0      21        0.0%
+SFR20                0      0       0      21        0.0%
+BANK8               50      0       0      22        0.0%
+BITSFR21             0      0       0      22        0.0%
+SFR21                0      0       0      22        0.0%
+BITBANK9            50      0       0      23        0.0%
+BITSFR22             0      0       0      23        0.0%
+SFR22                0      0       0      23        0.0%
+BANK9               50      0       0      24        0.0%
+BITSFR23             0      0       0      24        0.0%
+SFR23                0      0       0      24        0.0%
+BITBANK10           50      0       0      25        0.0%
+BITSFR24             0      0       0      25        0.0%
+SFR24                0      0       0      25        0.0%
+BANK10              50      0       0      26        0.0%
+BITSFR25             0      0       0      26        0.0%
+SFR25                0      0       0      26        0.0%
+BITBANK11           50      0       0      27        0.0%
+BITSFR26             0      0       0      27        0.0%
+SFR26                0      0       0      27        0.0%
+BANK11              50      0       0      28        0.0%
+BITSFR27             0      0       0      28        0.0%
+SFR27                0      0       0      28        0.0%
+BITBANK12           30      0       0      29        0.0%
+BITSFR28             0      0       0      29        0.0%
+SFR28                0      0       0      29        0.0%
+BANK12              30      0       0      30        0.0%
+BITSFR29             0      0       0      30        0.0%
+SFR29                0      0       0      30        0.0%
+BITSFR30             0      0       0      31        0.0%
+SFR30                0      0       0      31        0.0%
+DATA                 0      0       0      31        0.0%
+BITSFR31             0      0       0      32        0.0%
+SFR31                0      0       0      32        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.33 build 59893 
+Symbol Table                                                                                   Wed Dec 30 16:15:23 2015
+
+            __CFG_CP$OFF 0000                       u15 078B                       u25 0792  
+                     u35 07DE                       u45 07EE                       u57 07BE  
+                     u67 0781                       u77 07A2              __CFG_LVP$ON 0000  
+                    l449 07BA             __CFG_BORV$LO 0000                      wreg 0009  
+            main@buttons 0076             __CFG_WRT$OFF 0000            __CFG_FCMEN$ON 0000  
+                   _main 07B6                     btemp 007E            __CFG_BOREN$ON 0000  
+                   ltemp 007E                     start 0002                     ttemp 007E  
+                   wtemp 007E            __CFG_IESO$OFF 0000            __CFG_MCLRE$ON 0000  
+                  ?_main 0070            __CFG_WDTE$OFF 0000                    _TRISA 008C  
+                  _TRISC 008E                    _setup 076E                    ltemp0 007E  
+                  ltemp1 0082                    ltemp2 0086                    ltemp3 0080  
+                  ttemp0 007E                    ttemp1 0081                    ttemp2 0084  
+                  ttemp3 0087                    ttemp4 007F                    wtemp0 007E  
+                  wtemp1 0080                    wtemp2 0082                    wtemp3 0084  
+                  wtemp4 0086                    wtemp5 0088                    wtemp6 007F  
+        __initialization 07FC             __end_of_main 07FC           __CFG_LPBOR$OFF 0000  
+                 ??_main 0074      __CFG_USBLSCLK$48MHz 0000                   ?_setup 0070  
+                 _ANSELA 018C                   _ANSELC 018E           __CFG_PWRTE$OFF 0000  
+           ?_pollButtons 0070           __CFG_STVREN$ON 0000  __end_of__initialization 07FC  
+         __pcstackCOMMON 0070            __end_of_setup 0779                  ??_setup 0070  
+             __pmaintext 07B6          __CFG_PLLMULT$3x 0000     __size_of_pollButtons 003D  
+                __ptext0 0000                  __ptext1 076E                  __ptext2 0779  
+   end_of_initialization 07FC                _PORTCbits 000E         __CFG_FOSC$INTOSC 0000  
+     pollButtons@buttons 0073       __CFG_PLLEN$ENABLED 0000      start_initialization 07FC  
+              ___latbits 0002           __size_of_setup 000B                 _LATAbits 010C  
+               _LATCbits 010E            ??_pollButtons 0070      __end_of_pollButtons 07B6  
+          __size_of_main 0046              pic14e$flags 007E        __CFG_CLKOUTEN$OFF 0000  
+            _pollButtons 0779               _OSCCONbits 0099     __CFG_CPUDIV$NOCLKDIV 0000  

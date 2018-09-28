@@ -1,0 +1,5 @@
+_main: CODE, 40 0 33
+__initialization: CODE, 29 0 8
+_isr: CODE, 4 0 24
+_setup: CODE, 73 0 27
+Total: 92
